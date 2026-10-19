@@ -1,0 +1,67 @@
+{
+ "started_at": "2026-10-19 18:43:08",
+ "runs": [
+  {
+   "seed": 0,
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm0 --ver v_screen_perm0_clique_s0 --variant induced_coeff_override --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed0",
+   "status": "finished",
+   "started_at": "2026-10-19 18:43:08",
+   "log": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\screen_runs\\seed0.log",
+   "output": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed0\\emb_induced_coeff_override_s0.pt",
+   "returncode": 0,
+   "hours": 0.2599,
+   "cumulative_hours": 0.2599,
+   "output_exists": true
+  },
+  {
+   "seed": 1,
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm0 --ver v_screen_perm0_clique_s1 --variant induced_coeff_override --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique --seed 1 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed1",
+   "status": "finished",
+   "started_at": "2026-10-19 18:58:44",
+   "log": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\screen_runs\\seed1.log",
+   "output": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed1\\emb_induced_coeff_override_s1.pt",
+   "returncode": 0,
+   "hours": 0.2582,
+   "cumulative_hours": 0.5181,
+   "output_exists": true
+  },
+  {
+   "seed": 2,
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm0 --ver v_screen_perm0_clique_s2 --variant induced_coeff_override --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique --seed 2 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed2",
+   "status": "finished",
+   "started_at": "2026-10-19 19:14:14",
+   "log": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\screen_runs\\seed2.log",
+   "output": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed2\\emb_induced_coeff_override_s2.pt",
+   "returncode": 0,
+   "hours": 0.2588,
+   "cumulative_hours": 0.777,
+   "output_exists": true
+  },
+  {
+   "seed": 3,
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm0 --ver v_screen_perm0_clique_s3 --variant induced_coeff_override --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique --seed 3 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed3",
+   "status": "finished",
+   "started_at": "2026-10-19 19:29:45",
+   "log": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\screen_runs\\seed3.log",
+   "output": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed3\\emb_induced_coeff_override_s3.pt",
+   "returncode": 0,
+   "hours": 0.2584,
+   "cumulative_hours": 1.0354,
+   "output_exists": true
+  },
+  {
+   "seed": 4,
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm0 --ver v_screen_perm0_clique_s4 --variant induced_coeff_override --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique --seed 4 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed4",
+   "status": "finished",
+   "started_at": "2026-10-19 19:45:16",
+   "log": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\screen_runs\\seed4.log",
+   "output": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing\\outputs\\pr_training\\seed4\\emb_induced_coeff_override_s4.pt",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 1.294,
+   "output_exists": true
+  }
+ ],
+ "cap_hours": 15,
+ "estimate_hours_per_run": 2.5
+}

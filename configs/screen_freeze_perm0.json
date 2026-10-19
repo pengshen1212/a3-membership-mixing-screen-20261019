@@ -1,0 +1,125 @@
+{
+  "_comment": "Frozen same-perm0 design (v2). AUTHORIZED for the school-side 4090D run on 2026-10-19, cap 15 GPU-hours; training_started remains false until the school runner starts. Only the PR-clique arm is new (5 runs); PR-exact equals PP-exact by the exact-coefficient identity. RR/PP reuse is exploratory_only; the user acknowledged that level.",
+  "status": "authorized_pending_school_run",
+  "frozen_at": "2026-10-19",
+  "authorized": true,
+  "authorized_by": "user",
+  "authorized_at": "2026-10-19",
+  "authorization_note": "User authorized 15 GPU-hours for the school-side 4090D run and acknowledged the exploratory_only reuse level. The runner still verifies reuse audit, code/data pins, existing outputs and the wall-clock cap.",
+  "training_started": false,
+  "api_used": false,
+  "design": "same_perm0_content_crossed_with_real_vs_perm_coefficients",
+  "reuse": {
+    "audit_path": "experiments/a3-membership-mixing/outputs/reuse_audit.json",
+    "required_level": "exploratory_only",
+    "allow_certified": true,
+    "user_acknowledged_exploratory": true,
+    "note": "exploratory_only is not causal certification; the user explicitly acknowledged this level for the school-side screen"
+  },
+  "code_pins": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65"
+  },
+  "data_pins": {
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0",
+    "data/het_g8p0_perm0/seg2region.csv": "4dac8b3b858bb9a36b54ab1947a6a2e2df9aa4c2c64056cc0948a1463353a4f3"
+  },
+  "arms": {
+    "RR": {
+      "content": "real",
+      "coefficients": "real",
+      "training": "reuse archived data/het_g8p0 exact+clique, seeds 0-4",
+      "new_training": false
+    },
+    "PR": {
+      "content": "perm0",
+      "coefficients": "real",
+      "training": "clique only: new induced_coeff_override runs; exact is identical to PP exact",
+      "new_training": true,
+      "n_new_runs": 5
+    },
+    "PP": {
+      "content": "perm0",
+      "coefficients": "perm0",
+      "training": "reuse archived data/het_g8p0_perm0 exact+clique, seeds 0-4",
+      "new_training": false
+    },
+    "RP": {
+      "content": "real",
+      "coefficients": "perm0",
+      "training": "not trained; requires the same override operator with content=real, coefficients=perm0; keep as diagnostic only",
+      "new_training": false
+    }
+  },
+  "exact_identity": {
+    "statement": "exact coefficients depend only on d_i=2+b_i, which the perm0 region permutation preserves; therefore M(perm0, real)=M(perm0, perm0) and M(real, perm0)=M(real, real)",
+    "consequence": "no new PR-exact training; PR-exact readouts use the archived PP-exact embeddings",
+    "cpu_check": "outputs/operator_validation.json: PR_vs_PP=0, RP_vs_RR=0 for exact"
+  },
+  "probe": {
+    "readout": "MAE of speed from the frozen ridge_a1 probe",
+    "model": "Ridge(alpha=1.0) on QuantileTransformer(normal) target",
+    "split": "KFold(5, shuffle=True, random_state=0) over non-NaN speed labels",
+    "primary_subset": "all labeled roads (9,384)",
+    "secondary_subset": "eligible same-size-control subset (3,482 labeled) for continuity only",
+    "report_each_arm_MAE": true
+  },
+  "estimands": {
+    "per_seed_contrast": "E_arm,s = MAE_arm,s(clique_self) - MAE_arm,s(exact)",
+    "content_effect": "Delta_content,s = E_RR,s - E_PR,s (content change P vs R, coefficients held real); mean and 95% t interval over 5 paired seeds",
+    "coefficient_effect": "Delta_coeff,s = E_PR,s - E_PP,s (coefficients real vs perm, content held perm0); same interval",
+    "total_effect": "Delta_total,s = E_RR,s - E_PP,s = Delta_content,s + Delta_coeff,s on this path",
+    "path_note": "This is a two-step path decomposition (content first, then coefficients). Because training is nonlinear, the reverse path need not give the same split; RP is not trained, so no unique causal share is claimed.",
+    "primary_metric": "Delta_content on all labeled roads"
+  },
+  "thresholds": {
+    "meaningful_positive_m_s": 0.02,
+    "meaningful_negative_m_s": -0.02,
+    "negligible_band_m_s": [
+      -0.01,
+      0.01
+    ],
+    "alpha": 0.05,
+    "interval": "two-sided 95% t interval with 4 df over 5 paired seeds",
+    "rationale": "0.02 is ~43% of the archived all-road perm0 total effect (+0.0462); the negligible band is a precision-bounded equivalence claim, not a non-significance claim"
+  },
+  "cost": {
+    "new_runs": 5,
+    "runs_detail": "clique, PR arm: perm0 content + real coefficients, seeds 0-4",
+    "episodes_per_run": 5000,
+    "estimated_hours_per_run": 2.5,
+    "estimated_gpu_hours": 12.5,
+    "cap_gpu_hours": 15,
+    "api_calls": 0,
+    "python_executable": null,
+    "python_executable_note": "set A3_PYTHON on the school host or activate the training env; the runner falls back to sys.executable",
+    "platform_observation_4090d": {
+      "hours_per_run_archived_same_level": 0.48,
+      "total_hours_5_runs_estimate": 2.4,
+      "note": "archived remote g8p0 5000-episode runs; the 2.5h/run and 12.5h fields are the conservative 3060-based estimate kept for budget checks"
+    },
+    "budget_basis": "wall-clock cumulative time; documented proxy for GPU time; stop before a run that would exceed the cap"
+  },
+  "stop_rules": {
+    "meaningful_positive": "content contributes in the expected direction; proceed only to a pre-registered independent-confirmation design, not to a new method paper",
+    "meaningful_negative": "content changes the contrast in the opposite direction; the expected positive explanation fails; archive/merge unless a reversal was pre-registered (it was not)",
+    "negligible": "content effect negligible within the pre-registered +/-0.01 band with a CI entirely inside it; archive/merge, stop independent topic",
+    "inconclusive": "stop; do not claim content has no effect and do not add seeds/instances/models",
+    "budget_exceeded": "stop; report incomplete cells; do not extend or relax thresholds silently",
+    "reuse_not_acknowledged": "refuse to start"
+  },
+  "claim_boundaries": [
+    "One perm0 instance and five training seeds are not independent structural/site samples; this is a gate, not confirmation.",
+    "The decomposition is path-dependent; RP is not trained, so Delta_coeff is a coefficient effect at perm0 content, not a unique weight share of the original effect.",
+    "The exact arm is content-sensitive but coefficient-invariant; PR-exact=PP-exact does not mean the content change has no effect on exact readouts.",
+    "The same-size control remains a secondary restricted re-partition check; its 3,647-node limit is not a general limit of coefficient-fixed content interventions.",
+    "No new method or normalization is proposed; a positive result only explains an existing structural evaluation.",
+    "RR/PP reuse is exploratory_only: run manifests, archived hashes for all code, and artifact-to-partition identity are unverified."
+  ],
+  "execution_revision": "2026-10-19: isolated PR outputs; exclusive persistent ledger claim; no automatic restart; fail on missing output",
+  "artifacts": {
+    "new_outputs": "experiments/a3-membership-mixing/outputs/pr_training/seed{seed}/",
+    "archive_inputs_read_only_intent": true
+  }
+}

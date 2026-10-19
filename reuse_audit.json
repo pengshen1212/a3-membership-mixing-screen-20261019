@@ -1,0 +1,437 @@
+{
+ "status": "evaluated",
+ "levels": {},
+ "code": {
+  "train_graph.py": {
+   "exists": true,
+   "expected": "76547b3b60911a07b846b7ef25549dd661803def8202e649f1c61038862f821c",
+   "current": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+   "match": false
+  },
+  "a3_exact.py": {
+   "exists": true,
+   "expected": null,
+   "current": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+   "match": null
+  },
+  "model.py": {
+   "exists": true,
+   "expected": null,
+   "current": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+   "match": null
+  },
+  "config.py": {
+   "exists": true,
+   "expected": null,
+   "current": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+   "match": null
+  },
+  "utils.py": {
+   "exists": true,
+   "expected": null,
+   "current": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+   "match": null
+  },
+  "preprocess.py": {
+   "exists": true,
+   "expected": null,
+   "current": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+   "match": null
+  },
+  "a3_coeff_override.py": {
+   "exists": true,
+   "expected": null,
+   "current": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+   "match": null
+  },
+  "a3_output_paths.py": {
+   "exists": true,
+   "expected": null,
+   "current": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+   "match": null
+  }
+ },
+ "data": {
+  "data/het_g8p0/seg2region.csv": {
+   "exists": true,
+   "expected": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0",
+   "current": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0",
+   "match": true
+  },
+  "data/het_g8p0_perm0/seg2region.csv": {
+   "exists": true,
+   "expected": "4dac8b3b858bb9a36b54ab1947a6a2e2df9aa4c2c64056cc0948a1463353a4f3",
+   "current": "4dac8b3b858bb9a36b54ab1947a6a2e2df9aa4c2c64056cc0948a1463353a4f3",
+   "match": true
+  },
+  "data/het_g8p0/road_feature.csv": {
+   "exists": true,
+   "expected": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+   "current": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+   "match": true
+  },
+  "data/het_g8p0/roadmap.rel": {
+   "exists": true,
+   "expected": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+   "current": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+   "match": true
+  },
+  "data/het_g8p0/edge_attr.csv": {
+   "exists": true,
+   "expected": null,
+   "current": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+   "match": null
+  },
+  "data/het_g8p0/w_by_hop_sparse.npz": {
+   "exists": true,
+   "expected": null,
+   "current": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+   "match": null
+  },
+  "data/het_g8p0/win_speed.csv": {
+   "exists": true,
+   "expected": null,
+   "current": "23077a9072d31d08deca1944725cab1a04d40484b1e21c9f65dabb712c39c413",
+   "match": null
+  }
+ },
+ "artifacts": {
+  "RR/induced_exact/s0": {
+   "exists": true,
+   "sha256": "5a1fd80d9d9d8d78676256600e4ee80723ad76c3ef0553830c3f0d367d408ff3",
+   "variant": "induced_exact",
+   "seed": 0,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_exact/s1": {
+   "exists": true,
+   "sha256": "449e976d640faf483e8ed40c7796f9d453e0ad2b8240ead4445c886314689f71",
+   "variant": "induced_exact",
+   "seed": 1,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_exact/s2": {
+   "exists": true,
+   "sha256": "7056019fae74449cff86a10939042e55308e42a74d6b66fbef7d387c842d2ca7",
+   "variant": "induced_exact",
+   "seed": 2,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_exact/s3": {
+   "exists": true,
+   "sha256": "1b77243673d8227334281cc572d0307c12e27415a59886d8a523f6479c192d79",
+   "variant": "induced_exact",
+   "seed": 3,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_exact/s4": {
+   "exists": true,
+   "sha256": "ca32ed208fd1d6105ded61be547d6200ed21e63f8484ac4e28e1837c6341a3c0",
+   "variant": "induced_exact",
+   "seed": 4,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_clique_self/s0": {
+   "exists": true,
+   "sha256": "7bcf4d11814668389de0ec4d0dea752366a1365663ba4f5bf6635672a9ef7e1d",
+   "variant": "induced_clique_self",
+   "seed": 0,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_clique_self/s1": {
+   "exists": true,
+   "sha256": "34014f1f61ffa0e71e3949a02394b61b53641772aea5872caaea2cd6b31b115a",
+   "variant": "induced_clique_self",
+   "seed": 1,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_clique_self/s2": {
+   "exists": true,
+   "sha256": "0f7d16e8551586f44475bb5440f3e22d1f476ad428d9cbbcc7c1f5b1ed9f6d22",
+   "variant": "induced_clique_self",
+   "seed": 2,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_clique_self/s3": {
+   "exists": true,
+   "sha256": "77ab2d6ea77b9dec141e9b07a069ea8f486aa37ab87b110a14820bb6f8a68113",
+   "variant": "induced_clique_self",
+   "seed": 3,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "RR/induced_clique_self/s4": {
+   "exists": true,
+   "sha256": "b4b0cb3f011149a085d5989e00aa69ca3d9a47eb50e7f980b1cfb9de1bc30003",
+   "variant": "induced_clique_self",
+   "seed": 4,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_exact/s0": {
+   "exists": true,
+   "sha256": "039de1e01df0ef1436dc939a87358ac53f7c2db33aa525b21a0f153afcf019a5",
+   "variant": "induced_exact",
+   "seed": 0,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_exact/s1": {
+   "exists": true,
+   "sha256": "e4a811ea87fa73f8c59cac26fcea7948b2b909d8266329f30ce9e37846ddd1bf",
+   "variant": "induced_exact",
+   "seed": 1,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_exact/s2": {
+   "exists": true,
+   "sha256": "16a29ba3cb38ddfca1a4064e53f432c70f791f745790aa458a87e3be42849ca1",
+   "variant": "induced_exact",
+   "seed": 2,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_exact/s3": {
+   "exists": true,
+   "sha256": "906f0bb72beadc1b9bc84069e6d8b00645d7a63432d66d589f53feaf3ecac9f4",
+   "variant": "induced_exact",
+   "seed": 3,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_exact/s4": {
+   "exists": true,
+   "sha256": "a370ca744258a9c69b96dcfca0d989ae7ad3ba1501de4e8997c7c941a0259452",
+   "variant": "induced_exact",
+   "seed": 4,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_clique_self/s0": {
+   "exists": true,
+   "sha256": "e499aaf8edcf7b5f1d71584fc88a2d7d2da6d1d5090bcb1258c0e3e0139855a1",
+   "variant": "induced_clique_self",
+   "seed": 0,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_clique_self/s1": {
+   "exists": true,
+   "sha256": "696291c7865622cfc5a55f3f68a169d9aec4c8b4faa406075c9899ae8ad51085",
+   "variant": "induced_clique_self",
+   "seed": 1,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_clique_self/s2": {
+   "exists": true,
+   "sha256": "21a4dddc20f70ad0c57e992c2bde371fb064730a3791d425a28b6e57c81fd56b",
+   "variant": "induced_clique_self",
+   "seed": 2,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_clique_self/s3": {
+   "exists": true,
+   "sha256": "cc19c3205cba9649fb4866cb3a8f3d7a4659fd6d79d9655a5d075edde91b59c7",
+   "variant": "induced_clique_self",
+   "seed": 3,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  },
+  "PP/induced_clique_self/s4": {
+   "exists": true,
+   "sha256": "6913e4e3e07d1344ca15e6440ab9006bd1d90287548b75df3f1f05712dbe65dc",
+   "variant": "induced_clique_self",
+   "seed": 4,
+   "shape": [
+    11095,
+    128
+   ],
+   "finite": true,
+   "variant_matches": true,
+   "seed_matches": true,
+   "partition_identity": "path_only_unverified"
+  }
+ },
+ "run_manifest": {
+  "path": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\A3_ROOT_DST\\results\\a3_run_manifest.json",
+  "exists": false
+ },
+ "environment": {
+  "python": "3.11.7",
+  "torch": "2.4.1+cu121",
+  "cuda_available": true,
+  "cuda_version": "12.1",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "note": "current environment only; not a record of the archived runs"
+ },
+ "shared_inputs_identical": {
+  "road_feature.csv": true,
+  "roadmap.rel": true,
+  "edge_attr.csv": true,
+  "w_by_hop_sparse.npz": true,
+  "win_speed.csv": true
+ },
+ "run_logs_present": {
+  "a3_mech1a_local_train.log": false,
+  "a3_mech1a_eval_local.log": false,
+  "a3_align_eval.log": false
+ },
+ "archived_training_env": {
+  "python": "C:\\Users\\Peng1\\anaconda3\\envs\\jgrm_data\\python.exe",
+  "exists": false
+ },
+ "reuse_level": "exploratory_only",
+ "certified": false,
+ "exploratory_reuse_allowed": true,
+ "hard_blocked_reasons": [],
+ "certification_gaps": [
+  "train_graph.py differs from the archived hash because the new induced_coeff_override variant/args and isolated output option were added; the pre-edit file was observed to match 76547b... before this edit, but the current file is not a certified reproduction of the archived run",
+  "no archived hash for a3_exact.py",
+  "no archived hash for model.py",
+  "no archived hash for config.py",
+  "no archived hash for utils.py",
+  "no archived hash for preprocess.py",
+  "no archived hash for a3_coeff_override.py",
+  "no archived hash for a3_output_paths.py",
+  "no per-run manifest with operator/init/partition hashes"
+ ],
+ "entry_hash": {
+  "archived": "76547b3b60911a07b846b7ef25549dd661803def8202e649f1c61038862f821c",
+  "current": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+  "pre_edit_observed": "76547b3b60911a07b846b7ef25549dd661803def8202e649f1c61038862f821c",
+  "pre_edit_source": "sha256sum immediately before adding the override variant (2026-10-19); not a stored file"
+ },
+ "unverified_fields": [
+  "per-run operator/initialization snapshots",
+  "artifact-to-partition identity (only the directory path links them)",
+  "archived environment and GPU",
+  "model.py/a3_exact.py/config.py/utils.py/preprocess.py hashes against a run manifest",
+  "edge_attr/w_by_hop/win_speed hashes against a run manifest"
+ ],
+ "policy_note": "exploratory_only permits an exploratory screen only with these gaps disclosed; it is not causal certification. certified requires a run manifest and archived hashes for all code/data, which do not exist for these runs. The screen runner must require explicit user acknowledgement of exploratory_only."
+}
