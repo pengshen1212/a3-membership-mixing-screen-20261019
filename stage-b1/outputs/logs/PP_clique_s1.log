@@ -1,0 +1,39 @@
+2026-10-20 12:12:43,964 - INFO - dataset: het_g8p0_perm4, seed: 1, device: cuda, measure: jsd, ver: stage_b1_PP_clique_s1, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 12:12:43,969 - INFO - ==Road_features is ready
+2026-10-20 12:12:44,044 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 70745.17it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 13000.94it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2342/26161 [00:00<00:01, 23408.86it/s] 18%|█▊        | 4683/26161 [00:00<00:01, 21228.58it/s] 26%|██▌       | 6841/26161 [00:00<00:00, 21353.02it/s] 34%|███▍      | 8985/26161 [00:00<00:00, 19747.34it/s] 42%|████▏     | 10978/26161 [00:00<00:00, 18003.10it/s] 49%|████▉     | 12805/26161 [00:00<00:00, 17268.85it/s] 56%|█████▌    | 14549/26161 [00:00<00:00, 16048.19it/s] 62%|██████▏   | 16171/26161 [00:00<00:00, 14254.35it/s] 67%|██████▋   | 17630/26161 [00:01<00:00, 13637.06it/s] 73%|███████▎  | 19014/26161 [00:01<00:00, 12943.98it/s] 78%|███████▊  | 20321/26161 [00:01<00:00, 11926.50it/s] 82%|████████▏ | 21527/26161 [00:01<00:00, 11268.29it/s] 87%|████████▋ | 22662/26161 [00:01<00:00, 10915.40it/s] 91%|█████████ | 23757/26161 [00:01<00:00, 10712.60it/s] 95%|█████████▍| 24829/26161 [00:01<00:00, 10475.10it/s] 99%|█████████▉| 25875/26161 [00:01<00:00, 10065.12it/s]100%|██████████| 26161/26161 [00:01<00:00, 13534.30it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 12:12:46,028 - INFO - ==hg_structure is ready==
+2026-10-20 12:12:49,072 - INFO - ==variant=induced_clique_self: pairwise adj nnz=40572597 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 12:12:49,182 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 12:12:49,257 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 12:12:49,257 - INFO - ==hop weight is ready==
+2026-10-20 12:12:49,476 - INFO - A3 verified dispatch: variant=induced_clique_self, hgnn=PairHGNN
+2026-10-20 12:13:35,204 - INFO - Episode 249/5000, Loss: -0.5439
+2026-10-20 12:14:21,044 - INFO - Episode 499/5000, Loss: -0.5862
+2026-10-20 12:15:06,847 - INFO - Episode 749/5000, Loss: -0.6052
+2026-10-20 12:15:53,080 - INFO - Episode 999/5000, Loss: -0.6193
+2026-10-20 12:16:39,329 - INFO - Episode 1249/5000, Loss: -0.6260
+2026-10-20 12:17:24,608 - INFO - Episode 1499/5000, Loss: -0.6588
+2026-10-20 12:18:10,891 - INFO - Episode 1749/5000, Loss: -0.6739
+2026-10-20 12:18:56,991 - INFO - Episode 1999/5000, Loss: -0.6940
+2026-10-20 12:19:42,949 - INFO - Episode 2249/5000, Loss: -0.7132
+2026-10-20 12:20:29,019 - INFO - Episode 2499/5000, Loss: -0.7225
+2026-10-20 12:21:14,284 - INFO - Episode 2749/5000, Loss: -0.7295
+2026-10-20 12:22:00,648 - INFO - Episode 2999/5000, Loss: -0.7391
+2026-10-20 12:22:47,025 - INFO - Episode 3249/5000, Loss: -0.7495
+2026-10-20 12:23:32,371 - INFO - Episode 3499/5000, Loss: -0.7514
+2026-10-20 12:24:18,313 - INFO - Episode 3749/5000, Loss: -0.7605
+2026-10-20 12:25:04,174 - INFO - Episode 3999/5000, Loss: -0.7707
+2026-10-20 12:25:50,314 - INFO - Episode 4249/5000, Loss: -0.7695
+2026-10-20 12:26:36,733 - INFO - Episode 4499/5000, Loss: -0.7778
+2026-10-20 12:27:21,899 - INFO - Episode 4749/5000, Loss: -0.5935
+2026-10-20 12:28:08,165 - INFO - Episode 4999/5000, Loss: -0.6986
+2026-10-20 12:28:08,165 - INFO - !!!Training graph end!!!
+2026-10-20 12:28:08,237 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-b1\outputs\stage_b1\PP_clique\seed1\graph_model.pt
+2026-10-20 12:28:08,278 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-b1\outputs\stage_b1\PP_clique\seed1\emb_induced_clique_self_s1.pt

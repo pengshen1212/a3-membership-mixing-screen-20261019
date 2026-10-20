@@ -1,0 +1,22 @@
+{
+ "status": "generated",
+ "instance": "perm4",
+ "generation_seed": 20261020,
+ "algorithm": "identical family/algorithm to perm3; global node permutation consuming the real region-size histogram in ascending region-id order",
+ "sha256": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+ "checks": {
+  "n_rows": true,
+  "geo_order": true,
+  "region_count": true,
+  "ids_contiguous": true,
+  "size_multiset": true,
+  "no_empty_region": true,
+  "differs_from_real": true,
+  "changed_vs_real": 10970,
+  "differs_from_perm0": true,
+  "changed_vs_perm0": 11091,
+  "differs_from_perm3": true,
+  "changed_vs_perm3": 10961,
+  "load_partition_ok": true
+ }
+}

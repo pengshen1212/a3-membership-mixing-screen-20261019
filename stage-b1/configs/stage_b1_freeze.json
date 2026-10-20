@@ -1,0 +1,84 @@
+{
+  "_comment": "Stage B1 conditional freeze: second new instance perm4. AUTHORIZED conditionally by the user in chat on 2026-10-20 ('可以,a如果通过后你自动衔接上b1和b2,你做决定'): B1 may start ONLY IF Stage A's verdict is meaningful_positive. RR reuse is CERTIFIED (Stage A retrained RR on this host with a full manifest; embedding hashes are bound and re-verified at launch).",
+  "status": "authorized_conditional_on_stage_a_pass",
+  "frozen_at": "2026-10-20",
+  "authorized": true,
+  "authorized_by": "user (chat, 2026-10-20)",
+  "authorization_quote": "可以,a如果通过后你自动衔接上b1和b2,你做决定",
+  "trigger": {
+    "condition": "stage_a_result.json verdict == meaningful_positive",
+    "stage_a_result_path": "../a3-membership-mixing-stage-a/outputs/stage_a_result.json",
+    "also_requires": "stage_a_determinism_assessment.json verdict == benign_nondeterminism (numerical-equivalence revision, user-approved option 2 on 2026-10-20, '选2吧'; supersedes the original bitwise_identical requirement; measured Stage A MAE drift 0.00087 m/s vs gate 0.005)"
+  },
+  "certified": true,
+  "api_used": false,
+  "design": "second_independent_membership_instance_perm4_with_certified_RR_reuse",
+  "reuse": {
+    "RR": "certified reuse of Stage A retrained embeddings (hash-bound to stage_a_manifest.json, re-verified at preflight and at evaluation)",
+    "level": "RR_certified_reuse_PP_PR_retrained"
+  },
+  "instance": {
+    "name": "perm4",
+    "data_dir": "data/het_g8p0_perm4",
+    "generation_seed": 20261020,
+    "algorithm": "identical family/algorithm as perm3 (global node permutation consuming the real region-size histogram in ascending region-id order)",
+    "seg2region_sha256": "BOUND_AT_GENERATION (outputs/perm4_generation.json)",
+    "validation": "outputs/perm4_generation.json checks all true (incl. differs from real/perm0/perm3)"
+  },
+  "code_pins": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65"
+  },
+  "data_pins": {
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0",
+    "data/het_g8p0/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0/win_speed.csv": "23077a9072d31d08deca1944725cab1a04d40484b1e21c9f65dabb712c39c413"
+  },
+  "arms": {
+    "RR": {"training": "certified reuse of Stage A outputs (10 embeddings, hash-bound)", "runs": 0},
+    "PP": {"training": "retrain induced_exact + induced_clique_self on het_g8p0_perm4, seeds 0-4", "runs": 10},
+    "PR": {"training": "retrain induced_coeff_override (clique) on het_g8p0_perm4 with real coefficients, seeds 0-4", "runs": 5},
+    "RP": {"training": "not trained"}
+  },
+  "probe": {
+    "readout": "MAE of speed from the frozen ridge_a1 probe",
+    "model": "Ridge(alpha=1.0) on QuantileTransformer(normal) target",
+    "split": "KFold(5, shuffle=True, random_state=0) over non-NaN speed labels",
+    "primary_subset": "all labeled roads (9,384)",
+    "secondary_subset": "perm4 movable roads, continuity only"
+  },
+  "thresholds": {
+    "meaningful_positive_m_s": 0.02,
+    "meaningful_negative_m_s": -0.02,
+    "negligible_band_m_s": [-0.01, 0.01],
+    "alpha": 0.05,
+    "interval": "two-sided 95% t interval with 4 df over 5 paired seeds"
+  },
+  "cost": {
+    "new_runs": 15,
+    "repro_check_runs": 1,
+    "episodes_per_run": 5000,
+    "estimated_hours_per_run": 0.27,
+    "estimated_total_hours": 4.2,
+    "cap_gpu_hours": 5,
+    "api_calls": 0
+  },
+  "stop_rules": {
+    "meaningful_positive": "replication on a second independent instance; combined with Stage A supports the A3 mechanism claim; B2 (new city) remains the external-validity step and requires data",
+    "meaningful_negative": "direction reverses on the second instance; the effect is not instance-stable; stop independent topic, merge into A3",
+    "negligible": "no practical content effect on the second instance; stop independent topic, merge into A3",
+    "inconclusive": "stop; no additional seeds/instances to chase a result",
+    "stage_a_not_passed": "B1 never starts (trigger unmet)",
+    "budget_exceeded": "stop; report incomplete cells",
+    "run_failed": "no retry; ledger and evidence preserved; user decides"
+  },
+  "claim_boundaries": [
+    "Two instances on the same Porto network (perm3, perm4) are instance-level replication, not city-level external validity.",
+    "Certified RR reuse is bound to this host's Stage A chain; it does not certify the archived perm0 exploratory reuse.",
+    "Path decomposition remains path-dependent; RP not trained; no unique causal share claims."
+  ]
+}

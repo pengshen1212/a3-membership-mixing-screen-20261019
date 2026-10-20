@@ -1,0 +1,39 @@
+2026-10-20 13:45:49,104 - INFO - dataset: het_g8p0_perm4, seed: 2, device: cuda, measure: jsd, ver: stage_b1_PR_clique_s2, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 13:45:49,109 - INFO - ==Road_features is ready
+2026-10-20 13:45:49,190 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 66439.55it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 13010.25it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2360/26161 [00:00<00:01, 23451.52it/s] 18%|█▊        | 4706/26161 [00:00<00:00, 21543.37it/s] 26%|██▋       | 6871/26161 [00:00<00:00, 21259.78it/s] 34%|███▍      | 9002/26161 [00:00<00:00, 19373.82it/s] 42%|████▏     | 10960/26161 [00:00<00:00, 17532.71it/s] 49%|████▊     | 12743/26161 [00:00<00:00, 16732.31it/s] 55%|█████▌    | 14435/26161 [00:00<00:00, 15673.56it/s] 61%|██████    | 16018/26161 [00:00<00:00, 14048.28it/s] 67%|██████▋   | 17450/26161 [00:01<00:00, 13224.49it/s] 72%|███████▏  | 18790/26161 [00:01<00:00, 12651.82it/s] 77%|███████▋  | 20065/26161 [00:01<00:00, 11847.18it/s] 81%|████████▏ | 21257/26161 [00:01<00:00, 11136.04it/s] 86%|████████▌ | 22376/26161 [00:01<00:00, 10917.09it/s] 90%|████████▉ | 23469/26161 [00:01<00:00, 10568.87it/s] 94%|█████████▎| 24525/26161 [00:01<00:00, 10374.48it/s] 98%|█████████▊| 25561/26161 [00:01<00:00, 9991.11it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13337.52it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 13:45:51,205 - INFO - ==hg_structure is ready==
+2026-10-20 13:45:54,161 - INFO - ==variant=induced_coeff_override: pairwise adj nnz=40572597 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 13:45:54,268 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 13:45:54,337 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 13:45:54,337 - INFO - ==hop weight is ready==
+2026-10-20 13:45:54,536 - INFO - A3 verified dispatch: variant=induced_coeff_override, hgnn=PairHGNN
+2026-10-20 13:46:41,175 - INFO - Episode 249/5000, Loss: -0.5511
+2026-10-20 13:47:26,477 - INFO - Episode 499/5000, Loss: -0.5837
+2026-10-20 13:48:12,698 - INFO - Episode 749/5000, Loss: -0.6048
+2026-10-20 13:48:58,826 - INFO - Episode 999/5000, Loss: -0.6129
+2026-10-20 13:49:44,871 - INFO - Episode 1249/5000, Loss: -0.6365
+2026-10-20 13:50:30,922 - INFO - Episode 1499/5000, Loss: -0.6423
+2026-10-20 13:51:16,165 - INFO - Episode 1749/5000, Loss: -0.6624
+2026-10-20 13:52:02,653 - INFO - Episode 1999/5000, Loss: -0.6754
+2026-10-20 13:52:49,235 - INFO - Episode 2249/5000, Loss: -0.6898
+2026-10-20 13:53:34,830 - INFO - Episode 2499/5000, Loss: -0.6983
+2026-10-20 13:54:20,975 - INFO - Episode 2749/5000, Loss: -0.7178
+2026-10-20 13:55:06,786 - INFO - Episode 2999/5000, Loss: -0.7240
+2026-10-20 13:55:53,097 - INFO - Episode 3249/5000, Loss: -0.7261
+2026-10-20 13:56:39,519 - INFO - Episode 3499/5000, Loss: -0.7292
+2026-10-20 13:57:24,776 - INFO - Episode 3749/5000, Loss: -0.7477
+2026-10-20 13:58:10,907 - INFO - Episode 3999/5000, Loss: -0.7404
+2026-10-20 13:58:57,175 - INFO - Episode 4249/5000, Loss: -0.7511
+2026-10-20 13:59:43,099 - INFO - Episode 4499/5000, Loss: -0.7685
+2026-10-20 14:00:29,362 - INFO - Episode 4749/5000, Loss: -0.7797
+2026-10-20 14:01:14,688 - INFO - Episode 4999/5000, Loss: -0.7562
+2026-10-20 14:01:14,689 - INFO - !!!Training graph end!!!
+2026-10-20 14:01:14,753 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-b1\outputs\stage_b1\PR_clique\seed2\graph_model.pt
+2026-10-20 14:01:14,793 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-b1\outputs\stage_b1\PR_clique\seed2\emb_induced_coeff_override_s2.pt

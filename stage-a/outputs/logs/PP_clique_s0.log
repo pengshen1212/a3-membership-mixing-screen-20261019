@@ -1,0 +1,39 @@
+2026-10-20 01:52:41,377 - INFO - dataset: het_g8p0_perm3, seed: 0, device: cuda, measure: jsd, ver: stage_a_PP_clique_s0, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 01:52:41,381 - INFO - ==Road_features is ready
+2026-10-20 01:52:41,460 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 68562.39it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<?, ?it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2357/26161 [00:00<00:01, 23545.49it/s] 18%|█▊        | 4712/26161 [00:00<00:01, 21169.59it/s] 26%|██▌       | 6845/26161 [00:00<00:00, 21092.85it/s] 34%|███▍      | 8963/26161 [00:00<00:00, 19084.93it/s] 42%|████▏     | 10897/26161 [00:00<00:00, 17676.45it/s] 49%|████▊     | 12689/26161 [00:00<00:00, 16897.98it/s] 55%|█████▌    | 14394/26161 [00:00<00:00, 15578.90it/s] 61%|██████    | 15970/26161 [00:00<00:00, 14006.45it/s] 67%|██████▋   | 17398/26161 [00:01<00:00, 13306.70it/s] 72%|███████▏  | 18745/26161 [00:01<00:00, 12671.91it/s] 77%|███████▋  | 20022/26161 [00:01<00:00, 11590.04it/s] 81%|████████  | 21194/26161 [00:01<00:00, 10895.93it/s] 85%|████████▌ | 22292/26161 [00:01<00:00, 10690.17it/s] 89%|████████▉ | 23365/26161 [00:01<00:00, 10216.16it/s] 93%|█████████▎| 24388/26161 [00:01<00:00, 10125.29it/s] 97%|█████████▋| 25401/26161 [00:01<00:00, 9812.34it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13130.65it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 01:52:43,513 - INFO - ==hg_structure is ready==
+2026-10-20 01:52:46,450 - INFO - ==variant=induced_clique_self: pairwise adj nnz=40567211 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 01:52:46,556 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 01:52:46,627 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 01:52:46,628 - INFO - ==hop weight is ready==
+2026-10-20 01:52:46,830 - INFO - A3 verified dispatch: variant=induced_clique_self, hgnn=PairHGNN
+2026-10-20 01:53:33,171 - INFO - Episode 249/5000, Loss: -0.5370
+2026-10-20 01:54:19,041 - INFO - Episode 499/5000, Loss: -0.5773
+2026-10-20 01:55:04,909 - INFO - Episode 749/5000, Loss: -0.5959
+2026-10-20 01:55:51,214 - INFO - Episode 999/5000, Loss: -0.6096
+2026-10-20 01:56:37,566 - INFO - Episode 1249/5000, Loss: -0.6295
+2026-10-20 01:57:22,773 - INFO - Episode 1499/5000, Loss: -0.6473
+2026-10-20 01:58:09,025 - INFO - Episode 1749/5000, Loss: -0.6628
+2026-10-20 01:58:55,326 - INFO - Episode 1999/5000, Loss: -0.6729
+2026-10-20 01:59:41,185 - INFO - Episode 2249/5000, Loss: -0.6077
+2026-10-20 02:00:27,132 - INFO - Episode 2499/5000, Loss: -0.6760
+2026-10-20 02:01:12,539 - INFO - Episode 2749/5000, Loss: -0.6942
+2026-10-20 02:01:58,882 - INFO - Episode 2999/5000, Loss: -0.7089
+2026-10-20 02:02:45,556 - INFO - Episode 3249/5000, Loss: -0.7217
+2026-10-20 02:03:31,377 - INFO - Episode 3499/5000, Loss: -0.7361
+2026-10-20 02:04:17,182 - INFO - Episode 3749/5000, Loss: -0.7446
+2026-10-20 02:05:03,098 - INFO - Episode 3999/5000, Loss: -0.7484
+2026-10-20 02:05:49,396 - INFO - Episode 4249/5000, Loss: -0.7503
+2026-10-20 02:06:35,680 - INFO - Episode 4499/5000, Loss: -0.7644
+2026-10-20 02:07:20,911 - INFO - Episode 4749/5000, Loss: -0.7768
+2026-10-20 02:08:06,940 - INFO - Episode 4999/5000, Loss: -0.7784
+2026-10-20 02:08:06,940 - INFO - !!!Training graph end!!!
+2026-10-20 02:08:07,019 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PP_clique\seed0\graph_model.pt
+2026-10-20 02:08:07,061 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PP_clique\seed0\emb_induced_clique_self_s0.pt

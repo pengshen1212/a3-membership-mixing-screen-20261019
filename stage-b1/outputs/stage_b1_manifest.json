@@ -1,0 +1,659 @@
+{
+ "status": "completed",
+ "started_at": "2026-10-20 10:39:34",
+ "config_sha256": "93ad266c7b580b41478135a67d241f90f0b0baf28080c6600ee96393be6526af",
+ "freeze_doc_sha256": "c8df057a0d8c5d592033421043fb9a877f808aee45acae6dc61f1ea3c15315f3",
+ "preflight_sha256": "6fdbef8fdf35df9150e85b442810fa134a13681d3da23e15d3cce58754a4a830",
+ "perm4_generation_sha256": "7af2cb0304cc796ff9bad26974a9d8bec419dc1549cace7dd8cbdfa003b173cf",
+ "environment": {
+  "python": "3.11.7",
+  "torch": "2.4.1+cu121",
+  "cuda_version": "12.1",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "host": "Windows-10-10.0.26100-SP0"
+ },
+ "code_hashes": {
+  "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+  "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+  "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+  "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+  "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+  "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+  "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+  "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+  "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+ },
+ "rr_certified_reuse": {
+  "RR_exact_s0": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s1": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s2": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s3": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s4": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s0": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s1": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s2": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s3": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s4": {
+   "exists": true,
+   "hash_matches_manifest": true
+  }
+ },
+ "rr_source": {
+  "experiment": "stage_a",
+  "manifest": "C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-a\\outputs\\stage_a_manifest.json"
+ },
+ "init_reference": {
+  "0": {
+   "state_dict_sha256": "3a9f108f69b42b21d1b90cbd68ffabfc6ef1b257471db40cb483c5580a30fbea",
+   "deterministic": true
+  },
+  "1": {
+   "state_dict_sha256": "7bf29e520323ba4caaef939eeabf373c658402f4316ccbd5ef79d5c9367c4e3f",
+   "deterministic": true
+  },
+  "2": {
+   "state_dict_sha256": "a98cfe30c2d668e26f10f5a2c8940239252d08ef538a2a4cd47190891aaf70ed",
+   "deterministic": true
+  },
+  "3": {
+   "state_dict_sha256": "c01c026d2aab9785ec4edb1b9cf3292c2047de535e05628707d1dc155ddc9e7d",
+   "deterministic": true
+  },
+  "4": {
+   "state_dict_sha256": "a61ab31a19935a42bf84d15b845316536df82e9206fed72aa0b2ec4835ac6461",
+   "deterministic": true
+  }
+ },
+ "runs": [
+  {
+   "arm": "PP_exact",
+   "seed": 0,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_exact",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_exact_s0 --variant induced_exact --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_exact\\seed0",
+   "status": "finished",
+   "started_at": "2026-10-20 10:39:36",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "3a9f108f69b42b21d1b90cbd68ffabfc6ef1b257471db40cb483c5580a30fbea",
+   "returncode": 0,
+   "hours": 0.2594,
+   "cumulative_hours": 0.2594,
+   "embedding_exists": true,
+   "embedding_sha256": "f4797198e5d8ee776564679af7cdb4ed76b7d077817e30da653a420cafe11afa",
+   "graph_model_sha256": "290a145cf2390350f0b5ddd19108d167394a473658aae2057805da5f03249b21",
+   "log_sha256": "fd392fbd9121ad42004aaeac2afa7a9047065ad0b0026120026387f3b072301f"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 1,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_exact",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_exact_s1 --variant induced_exact --seed 1 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_exact\\seed1",
+   "status": "finished",
+   "started_at": "2026-10-20 10:55:10",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "7bf29e520323ba4caaef939eeabf373c658402f4316ccbd5ef79d5c9367c4e3f",
+   "returncode": 0,
+   "hours": 0.2586,
+   "cumulative_hours": 0.518,
+   "embedding_exists": true,
+   "embedding_sha256": "26c5afda656637dbba6044079c390e5a3f93792cfaf25c900e28aa0c03a9c104",
+   "graph_model_sha256": "b6272f6d057ed6ba67707dc47c177c53fbe5146a944684f2aec911363848cae7",
+   "log_sha256": "b46c244d54ef5616568ada557652de64805eb8dc341ae76b723fa5c1326b490b"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 2,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_exact",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_exact_s2 --variant induced_exact --seed 2 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_exact\\seed2",
+   "status": "finished",
+   "started_at": "2026-10-20 11:10:41",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "a98cfe30c2d668e26f10f5a2c8940239252d08ef538a2a4cd47190891aaf70ed",
+   "returncode": 0,
+   "hours": 0.2581,
+   "cumulative_hours": 0.7761,
+   "embedding_exists": true,
+   "embedding_sha256": "99f7c77265211a7a182fe10fd53aefcd6373f20f6a19c4b54404ec14d36088f8",
+   "graph_model_sha256": "f6a679bb77c80cb5a4e79d4c67f50b8a39b7beb60dc934ea36499e8e320be990",
+   "log_sha256": "542096f1285af5875645f17203690187ec30e9d6822a5ca3fff5eb0b8212ac0d"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 3,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_exact",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_exact_s3 --variant induced_exact --seed 3 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_exact\\seed3",
+   "status": "finished",
+   "started_at": "2026-10-20 11:26:10",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "c01c026d2aab9785ec4edb1b9cf3292c2047de535e05628707d1dc155ddc9e7d",
+   "returncode": 0,
+   "hours": 0.258,
+   "cumulative_hours": 1.0341,
+   "embedding_exists": true,
+   "embedding_sha256": "1e4cfbf6c0a6f94003e82354d2b27a84799e69125d0b270659ecee7335b323f5",
+   "graph_model_sha256": "633fa4dd1e72fc036fc799b229d8ddf5f8c4bc53af84164cf5ee691e8c0bfc9f",
+   "log_sha256": "8732006c57772808a99e906051f42d7ebf63604ba30723a0495eb83fddf6949a"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 4,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_exact",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_exact_s4 --variant induced_exact --seed 4 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_exact\\seed4",
+   "status": "finished",
+   "started_at": "2026-10-20 11:41:39",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "a61ab31a19935a42bf84d15b845316536df82e9206fed72aa0b2ec4835ac6461",
+   "returncode": 0,
+   "hours": 0.2579,
+   "cumulative_hours": 1.292,
+   "embedding_exists": true,
+   "embedding_sha256": "489e156b0ea5547b119e9280b2f375a93f1d1d45603305642b698b107be2dc55",
+   "graph_model_sha256": "1f2e45aaa3d5d3d4770bd1797fcd5e8ab84233b653d51c7b8538aaab80923fd3",
+   "log_sha256": "a30f0ff74b425f838e33dc71a53ec7991aab043521998da4d42e85969345cfd5"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 0,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_clique_self",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s0 --variant induced_clique_self --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_clique\\seed0",
+   "status": "finished",
+   "started_at": "2026-10-20 11:57:08",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "3a9f108f69b42b21d1b90cbd68ffabfc6ef1b257471db40cb483c5580a30fbea",
+   "returncode": 0,
+   "hours": 0.2587,
+   "cumulative_hours": 1.5507,
+   "embedding_exists": true,
+   "embedding_sha256": "ab9d6b1bf41552fb3123a941b40be211f24f712a563bb33a2c77483a5b669d18",
+   "graph_model_sha256": "05bdd49b26349b017d953a108914bdb6eafff19b0f6e3449c2879c386527a79e",
+   "log_sha256": "cf6706cfc8f1a2aad9478f007a3f7b79f9ab1e96ae93fe55d4171d12d0f78169"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 1,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_clique_self",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s1 --variant induced_clique_self --seed 1 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_clique\\seed1",
+   "status": "finished",
+   "started_at": "2026-10-20 12:12:39",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "7bf29e520323ba4caaef939eeabf373c658402f4316ccbd5ef79d5c9367c4e3f",
+   "returncode": 0,
+   "hours": 0.2581,
+   "cumulative_hours": 1.8088,
+   "embedding_exists": true,
+   "embedding_sha256": "7df4fea4076edd485447026e17e52967c0d47e3d33fd96fa2e8004f80b78371c",
+   "graph_model_sha256": "c1f7fd3547c32eb5784678dbf86495a1548a1355407e7263e97320e9f181c74a",
+   "log_sha256": "eced6be9c38c24913fc020921c6e17233551568aa8f4d940729fb3b60ea14cd2"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 2,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_clique_self",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s2 --variant induced_clique_self --seed 2 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_clique\\seed2",
+   "status": "finished",
+   "started_at": "2026-10-20 12:28:08",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "a98cfe30c2d668e26f10f5a2c8940239252d08ef538a2a4cd47190891aaf70ed",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 2.0674,
+   "embedding_exists": true,
+   "embedding_sha256": "5680f3f60cb6cbb3f5818e80ee2e0160eea8c03603a8f2b903ed9224ef73eacb",
+   "graph_model_sha256": "99d55e34384785657cb7cc6444b00b7a1ebddf6a6156b897f42c37b99b1654f9",
+   "log_sha256": "7872629f94e95eae7821d4d9ea43f3298f036f30716c64b36b86fb3be58f5964"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 3,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_clique_self",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s3 --variant induced_clique_self --seed 3 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_clique\\seed3",
+   "status": "finished",
+   "started_at": "2026-10-20 12:43:39",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "c01c026d2aab9785ec4edb1b9cf3292c2047de535e05628707d1dc155ddc9e7d",
+   "returncode": 0,
+   "hours": 0.2584,
+   "cumulative_hours": 2.3257,
+   "embedding_exists": true,
+   "embedding_sha256": "7f866fbcdb429ef6df63224c3f46446659ac898c998c075bb615d192951d4f33",
+   "graph_model_sha256": "5ab750aa9994fbe3dd535eb74272f86673fe174e0800826de2190ae4630b73c1",
+   "log_sha256": "8e1acb4a7a5b069517bab310c66909295be476eeab9481a8f6e30d330a0de155"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 4,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_clique_self",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s4 --variant induced_clique_self --seed 4 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PP_clique\\seed4",
+   "status": "finished",
+   "started_at": "2026-10-20 12:59:09",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3"
+   },
+   "init_reference_sha256": "a61ab31a19935a42bf84d15b845316536df82e9206fed72aa0b2ec4835ac6461",
+   "returncode": 0,
+   "hours": 0.259,
+   "cumulative_hours": 2.5847,
+   "embedding_exists": true,
+   "embedding_sha256": "f0ebe3e60697f4038401d6c4fabf615a5aa15cc46dabe8e43712fc1a9393201e",
+   "graph_model_sha256": "049a7304236d321b34deb0fd4ddc2a601f93c5bb4e1a0f4e3b93c7458266920b",
+   "log_sha256": "04b28deb114273641dce89e3064f543baea78b56b09d710b95337735dcccad94"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 0,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_coeff_override",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PR_clique_s0 --variant induced_coeff_override --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PR_clique\\seed0 --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique",
+   "status": "finished",
+   "started_at": "2026-10-20 13:14:42",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0"
+   },
+   "init_reference_sha256": "3a9f108f69b42b21d1b90cbd68ffabfc6ef1b257471db40cb483c5580a30fbea",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 2.8432,
+   "embedding_exists": true,
+   "embedding_sha256": "3855a653114ee75e1bc95ce8f82bfd610d0047fb7027d50c5f16098ce0abd3a1",
+   "graph_model_sha256": "362e5c5ad65a470746b9682c2e7d7c30b2a7447d4583b20b1f4cde38e514eb73",
+   "log_sha256": "a00e246f9ca32768dc506401e3570f73faa4f59714cfd3dd3c5d59d3ba26944e"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 1,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_coeff_override",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PR_clique_s1 --variant induced_coeff_override --seed 1 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PR_clique\\seed1 --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique",
+   "status": "finished",
+   "started_at": "2026-10-20 13:30:12",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0"
+   },
+   "init_reference_sha256": "7bf29e520323ba4caaef939eeabf373c658402f4316ccbd5ef79d5c9367c4e3f",
+   "returncode": 0,
+   "hours": 0.2587,
+   "cumulative_hours": 3.1019,
+   "embedding_exists": true,
+   "embedding_sha256": "7b426b490da51343b01dce5da8d258c3ccd25d79481e06d829f60b3355a8ac15",
+   "graph_model_sha256": "a87d91b4d5b466f8d1c4ab6da95800143831c3e6383f119bb276b16136ec845a",
+   "log_sha256": "6068313ce80af27c04ebbb3043ed007ad0adfe86b0e998a12533bf19bae8324a"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 2,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_coeff_override",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PR_clique_s2 --variant induced_coeff_override --seed 2 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PR_clique\\seed2 --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique",
+   "status": "finished",
+   "started_at": "2026-10-20 13:45:44",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0"
+   },
+   "init_reference_sha256": "a98cfe30c2d668e26f10f5a2c8940239252d08ef538a2a4cd47190891aaf70ed",
+   "returncode": 0,
+   "hours": 0.2586,
+   "cumulative_hours": 3.3605,
+   "embedding_exists": true,
+   "embedding_sha256": "c0692810a2e9885ef2f5c9411611511b039b0c58c00c3aa6e6dcd13cd04dec71",
+   "graph_model_sha256": "fdbcd6238853d7fed2aab907cc20257c4505acec5a42134fa474bec7a99164a3",
+   "log_sha256": "479536f366bbb7828289a75253c8990575ed396b0493764da4892bf29ed67c45"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 3,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_coeff_override",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PR_clique_s3 --variant induced_coeff_override --seed 3 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PR_clique\\seed3 --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique",
+   "status": "finished",
+   "started_at": "2026-10-20 14:01:15",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0"
+   },
+   "init_reference_sha256": "c01c026d2aab9785ec4edb1b9cf3292c2047de535e05628707d1dc155ddc9e7d",
+   "returncode": 0,
+   "hours": 0.259,
+   "cumulative_hours": 3.6195,
+   "embedding_exists": true,
+   "embedding_sha256": "0d7fd5f64179801788bf6ffb0c9f05e9c2dc343a6fad797fec441c391ea628b8",
+   "graph_model_sha256": "0b514541c92fe9c174286f040526f44e8e52622d9077b53a09d962f4d451e1f7",
+   "log_sha256": "69a86874cebccdf094bbca343e32bc3fdb07e0be860da1c97c23379bac78676d"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 4,
+   "dataset": "het_g8p0_perm4",
+   "variant": "induced_coeff_override",
+   "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PR_clique_s4 --variant induced_coeff_override --seed 4 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\PR_clique\\seed4 --coeff-seg2region data/het_g8p0/seg2region.csv --override-weighting clique",
+   "status": "finished",
+   "started_at": "2026-10-20 14:16:47",
+   "code_hashes": {
+    "train_graph.py": "4518cd50729eb3e4acf62c8d1103b17956b41dd10273867a970f12476bf9cbe6",
+    "a3_coeff_override.py": "11736324abea180e34ef813403e73ca1b1e7127f77c736b63e3da5e9a74cb1c6",
+    "a3_output_paths.py": "53bcd14b54e0080fbb6d2b3352cd20798a4086107edfc7ec940b0f02f40ced65",
+    "model.py": "de1bd914b981fea0bf1535b69020db52acaf9ecdbb8db2b353fb1f1756fd7273",
+    "config.py": "dcca52d45cb776c44f228548e9a94a8fb9551335b77f630dcbc8a6c3ae49454f",
+    "preprocess.py": "0205ec743af0327c10d9971e36e8a5152f8e46d2e7fe928d47888dd6123c7ebc",
+    "utils.py": "762d7448995b36ec646f0ace20b43c2abecc5f7993065c9391c779b34402a375",
+    "a3_exact.py": "9e9f62773921cf12cf23dfb3af55bd84e10d180c154dffa398cd8263443fd786",
+    "dataset.py": "fbd1f5f8d97c772e5f187c4a1757b8cf3588ede44e2ed4dc0d46dbff718f3033"
+   },
+   "input_data_hashes": {
+    "data/het_g8p0_perm4/seg2region.csv": "f0020b91e6e6440cbecbc6626ee363e2c24e0ac6888f9ad9214da7f21e2bde62",
+    "data/het_g8p0_perm4/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+    "data/het_g8p0_perm4/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+    "data/het_g8p0_perm4/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+    "data/het_g8p0_perm4/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+    "data/het_g8p0_perm4/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+    "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0"
+   },
+   "init_reference_sha256": "a61ab31a19935a42bf84d15b845316536df82e9206fed72aa0b2ec4835ac6461",
+   "returncode": 0,
+   "hours": 0.2587,
+   "cumulative_hours": 3.8782,
+   "embedding_exists": true,
+   "embedding_sha256": "18df68fb46f5eee83c38d3e1d1f4f0c090ec2d0430bf1c9d5282b79c2d2258ab",
+   "graph_model_sha256": "0553ec6bb5ef8f80257dfca7110cd04879faf0ced4297adb24b8cf1993322f84",
+   "log_sha256": "69ec4f5c02730c0175913b4537e2658b0f68cde6901d9546b7fd34795c3ae569"
+  }
+ ],
+ "reproducibility_check": {
+  "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s0 --variant induced_clique_self --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\repro_check_PP_clique_s0",
+  "returncode": 0,
+  "hours": 0.265,
+  "cumulative_hours": 4.1432,
+  "original_sha256": "ab9d6b1bf41552fb3123a941b40be211f24f712a563bb33a2c77483a5b669d18",
+  "repro_sha256": "bec29de2e9539392b5826bda79db3f4fa1f60983cf570770d94d03ce669e1572",
+  "bitwise_identical": false,
+  "embedding_stats": {
+   "max_abs_diff": 83.42675018310547,
+   "rms_diff": 0.7845797538757324,
+   "relative_frobenius_error": 0.4814290404319763
+  },
+  "criterion": "numerical equivalence: MAE drift <= 0.005 m/s, evaluated by eval_stage_b1.py (revision 2026-10-20, user-approved option 2); bitwise is reported only, not gating"
+ },
+ "stopped": null,
+ "total_hours": 4.1432
+}

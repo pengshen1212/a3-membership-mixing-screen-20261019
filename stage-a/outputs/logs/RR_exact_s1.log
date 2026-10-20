@@ -1,0 +1,39 @@
+2026-10-19 22:15:40,068 - INFO - dataset: het_g8p0, seed: 1, device: cuda, measure: jsd, ver: stage_a_RR_exact_s1, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-19 22:15:40,072 - INFO - ==Road_features is ready
+2026-10-19 22:15:40,156 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 70807.09it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 12911.66it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2374/26161 [00:00<00:01, 23499.00it/s] 18%|█▊        | 4724/26161 [00:00<00:00, 21452.86it/s] 26%|██▋       | 6881/26161 [00:00<00:00, 21351.98it/s] 34%|███▍      | 9022/26161 [00:00<00:00, 19715.17it/s] 42%|████▏     | 11010/26161 [00:00<00:00, 18187.81it/s] 49%|████▉     | 12850/26161 [00:00<00:00, 17153.52it/s] 56%|█████▌    | 14582/26161 [00:00<00:00, 15865.28it/s] 62%|██████▏   | 16187/26161 [00:00<00:00, 14220.26it/s] 67%|██████▋   | 17638/26161 [00:01<00:00, 13391.33it/s] 73%|███████▎  | 18996/26161 [00:01<00:00, 12676.19it/s] 78%|███████▊  | 20275/26161 [00:01<00:00, 11533.92it/s] 82%|████████▏ | 21444/26161 [00:01<00:00, 10880.20it/s] 86%|████████▌ | 22541/26161 [00:01<00:00, 10668.45it/s] 90%|█████████ | 23612/26161 [00:01<00:00, 10389.33it/s] 94%|█████████▍| 24652/26161 [00:01<00:00, 10140.64it/s] 98%|█████████▊| 25665/26161 [00:01<00:00, 9604.35it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13248.78it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-19 22:15:42,180 - INFO - ==hg_structure is ready==
+2026-10-19 22:15:43,904 - INFO - ==variant=induced_exact: pairwise adj nnz=40534925 from 2199 hyperedges (single tensor, int32)==
+2026-10-19 22:15:44,004 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-19 22:15:44,078 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-19 22:15:44,079 - INFO - ==hop weight is ready==
+2026-10-19 22:15:44,290 - INFO - A3 verified dispatch: variant=induced_exact, hgnn=PairHGNN
+2026-10-19 22:16:30,425 - INFO - Episode 249/5000, Loss: -0.9539
+2026-10-19 22:17:15,608 - INFO - Episode 499/5000, Loss: -1.0822
+2026-10-19 22:18:01,895 - INFO - Episode 749/5000, Loss: -1.1403
+2026-10-19 22:18:48,291 - INFO - Episode 999/5000, Loss: -1.1691
+2026-10-19 22:19:33,786 - INFO - Episode 1249/5000, Loss: -1.1822
+2026-10-19 22:20:19,632 - INFO - Episode 1499/5000, Loss: -1.1962
+2026-10-19 22:21:05,282 - INFO - Episode 1749/5000, Loss: -1.1968
+2026-10-19 22:21:51,441 - INFO - Episode 1999/5000, Loss: -1.2096
+2026-10-19 22:22:37,628 - INFO - Episode 2249/5000, Loss: -1.2110
+2026-10-19 22:23:22,855 - INFO - Episode 2499/5000, Loss: -1.2187
+2026-10-19 22:24:08,812 - INFO - Episode 2749/5000, Loss: -1.2212
+2026-10-19 22:24:54,927 - INFO - Episode 2999/5000, Loss: -1.2214
+2026-10-19 22:25:40,827 - INFO - Episode 3249/5000, Loss: -1.2215
+2026-10-19 22:26:26,884 - INFO - Episode 3499/5000, Loss: -1.2249
+2026-10-19 22:27:12,183 - INFO - Episode 3749/5000, Loss: -1.2273
+2026-10-19 22:27:58,254 - INFO - Episode 3999/5000, Loss: -1.2340
+2026-10-19 22:28:44,680 - INFO - Episode 4249/5000, Loss: -1.2322
+2026-10-19 22:29:30,053 - INFO - Episode 4499/5000, Loss: -1.2314
+2026-10-19 22:30:15,957 - INFO - Episode 4749/5000, Loss: -1.2387
+2026-10-19 22:31:01,835 - INFO - Episode 4999/5000, Loss: -1.2343
+2026-10-19 22:31:01,835 - INFO - !!!Training graph end!!!
+2026-10-19 22:31:01,928 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\RR_exact\seed1\graph_model.pt
+2026-10-19 22:31:01,969 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\RR_exact\seed1\emb_induced_exact_s1.pt

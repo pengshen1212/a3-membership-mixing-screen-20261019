@@ -1,0 +1,39 @@
+2026-10-19 22:00:01,358 - INFO - dataset: het_g8p0, seed: 0, device: cuda, measure: jsd, ver: stage_a_RR_exact_s0, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-19 22:00:01,362 - INFO - ==Road_features is ready
+2026-10-19 22:00:01,504 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 68501.73it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 13007.15it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2341/26161 [00:00<00:01, 23398.14it/s] 18%|█▊        | 4681/26161 [00:00<00:01, 20459.63it/s] 26%|██▌       | 6778/26161 [00:00<00:00, 20623.43it/s] 34%|███▍      | 8855/26161 [00:00<00:00, 18793.07it/s] 41%|████      | 10760/26161 [00:00<00:00, 17130.33it/s] 48%|████▊     | 12502/26161 [00:00<00:00, 16343.82it/s] 54%|█████▍    | 14154/26161 [00:00<00:00, 15169.48it/s] 60%|█████▉    | 15688/26161 [00:00<00:00, 13791.72it/s] 65%|██████▌   | 17089/26161 [00:01<00:00, 12910.67it/s] 70%|███████   | 18395/26161 [00:01<00:00, 12527.40it/s] 75%|███████▌  | 19655/26161 [00:01<00:00, 11525.10it/s] 80%|███████▉  | 20818/26161 [00:01<00:00, 10820.11it/s] 84%|████████▎ | 21908/26161 [00:01<00:00, 10365.10it/s] 88%|████████▊ | 22948/26161 [00:01<00:00, 10099.68it/s] 92%|█████████▏| 23958/26161 [00:01<00:00, 10052.55it/s] 95%|█████████▌| 24963/26161 [00:01<00:00, 9806.36it/s]  99%|█████████▉| 25943/26161 [00:02<00:00, 9541.03it/s]100%|██████████| 26161/26161 [00:02<00:00, 12817.87it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-19 22:00:03,605 - INFO - ==hg_structure is ready==
+2026-10-19 22:00:05,325 - INFO - ==variant=induced_exact: pairwise adj nnz=40534925 from 2199 hyperedges (single tensor, int32)==
+2026-10-19 22:00:05,431 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-19 22:00:05,502 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-19 22:00:05,502 - INFO - ==hop weight is ready==
+2026-10-19 22:00:05,685 - INFO - A3 verified dispatch: variant=induced_exact, hgnn=PairHGNN
+2026-10-19 22:00:53,174 - INFO - Episode 249/5000, Loss: -0.9826
+2026-10-19 22:01:40,633 - INFO - Episode 499/5000, Loss: -1.1064
+2026-10-19 22:02:27,755 - INFO - Episode 749/5000, Loss: -1.1533
+2026-10-19 22:03:13,997 - INFO - Episode 999/5000, Loss: -1.1749
+2026-10-19 22:04:00,463 - INFO - Episode 1249/5000, Loss: -1.1919
+2026-10-19 22:04:46,891 - INFO - Episode 1499/5000, Loss: -1.2007
+2026-10-19 22:05:32,246 - INFO - Episode 1749/5000, Loss: -1.2068
+2026-10-19 22:06:19,501 - INFO - Episode 1999/5000, Loss: -1.2137
+2026-10-19 22:07:06,486 - INFO - Episode 2249/5000, Loss: -1.2141
+2026-10-19 22:07:54,324 - INFO - Episode 2499/5000, Loss: -1.2163
+2026-10-19 22:08:41,878 - INFO - Episode 2749/5000, Loss: -1.2180
+2026-10-19 22:09:27,257 - INFO - Episode 2999/5000, Loss: -1.2229
+2026-10-19 22:10:13,320 - INFO - Episode 3249/5000, Loss: -1.2288
+2026-10-19 22:10:59,407 - INFO - Episode 3499/5000, Loss: -1.2294
+2026-10-19 22:11:45,490 - INFO - Episode 3749/5000, Loss: -1.2285
+2026-10-19 22:12:31,365 - INFO - Episode 3999/5000, Loss: -1.2282
+2026-10-19 22:13:16,596 - INFO - Episode 4249/5000, Loss: -1.2320
+2026-10-19 22:14:02,967 - INFO - Episode 4499/5000, Loss: -1.2300
+2026-10-19 22:14:49,401 - INFO - Episode 4749/5000, Loss: -1.2345
+2026-10-19 22:15:34,845 - INFO - Episode 4999/5000, Loss: -1.2297
+2026-10-19 22:15:34,846 - INFO - !!!Training graph end!!!
+2026-10-19 22:15:34,936 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\RR_exact\seed0\graph_model.pt
+2026-10-19 22:15:34,979 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\RR_exact\seed0\emb_induced_exact_s0.pt

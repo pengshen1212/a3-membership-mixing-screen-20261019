@@ -1,0 +1,457 @@
+{
+ "started_at": "2026-10-19 21:59:56",
+ "cap_hours": 10,
+ "runs": [
+  {
+   "arm": "RR_exact",
+   "seed": 0,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 0,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2609,
+   "cumulative_hours": 0.2609,
+   "embedding_sha256": "a4f83f261b8538cf81d59765af0d560f1b27c32f1cec1129d1f74a55a2d2a008"
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 1,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 1,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2575,
+   "cumulative_hours": 0.5184,
+   "embedding_sha256": "3ca68a1633c43f2641402bb3615f851605ac73068d63bcea7c784a98e33ec09a"
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 2,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 2,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2587,
+   "cumulative_hours": 0.777,
+   "embedding_sha256": "f995e9f8bfa22114bac2adae243d7cf16f8c1eaa07df27f264005174638be564"
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 3,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 3,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2577,
+   "cumulative_hours": 1.0347,
+   "embedding_sha256": "f42e7320c5e13e22cc59a33c3f3008940018ac8a38bb635c56e7ebedff41039c"
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 4,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_exact",
+   "seed": 4,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2582,
+   "cumulative_hours": 1.2929,
+   "embedding_sha256": "78714fa37e7d56c1de68615ff5b09b0ed84e8a0a3939fb3ee43c54ed4356e00d"
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 0,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 0,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2584,
+   "cumulative_hours": 1.5513,
+   "embedding_sha256": "acee795ebd5aa0b349c4f643f731e09053a36558c3fb66c77cb3b057d548c87c"
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 1,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 1,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 1.8098,
+   "embedding_sha256": "673e30319c45d87908d65f05e194a005f51dd7108094eeb25a4a96cdc1bc19bb"
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 2,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 2,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 2.0683,
+   "embedding_sha256": "2526726632f73207a56b3bc71f1d41049e60856c2a7775d5732a644f7f9dc583"
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 3,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 3,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2579,
+   "cumulative_hours": 2.3263,
+   "embedding_sha256": "20744fc8660ee8a79660096da6f1d2e5af28ec84cc5e68bd6bff57af90cb1b8d"
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 4,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "RR_clique",
+   "seed": 4,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 2.5848,
+   "embedding_sha256": "41d31f238b24970e003b5b591f9f2da7236acd615a0b8ae38ae3f88423d15a5f"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 0,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 0,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2581,
+   "cumulative_hours": 2.8429,
+   "embedding_sha256": "cd8d90b0d608232652c2dc8d751f77c333f17796670f9cf5faee617fbc34e4af"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 1,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 1,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2579,
+   "cumulative_hours": 3.1008,
+   "embedding_sha256": "db929db1238a51f3edc4d2749de58b33e491c4e51c17d9d9454e6bf242004a40"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 2,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 2,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2581,
+   "cumulative_hours": 3.3589,
+   "embedding_sha256": "b476c2423f69eb70acca5c4e4a60314c717b27c820b39316e43090f009e41795"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 3,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 3,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2583,
+   "cumulative_hours": 3.6171,
+   "embedding_sha256": "a85897ad14b85bdbeaf7dd9d8f5231f678258779397cd65371e735a461335dda"
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 4,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_exact",
+   "seed": 4,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2605,
+   "cumulative_hours": 3.8776,
+   "embedding_sha256": "0e0bfc9f5bf65c85cfe842822226d2d0b8a309dc5268613ab651c33c7cd202ff"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 0,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 0,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 4.1361,
+   "embedding_sha256": "3e7c3c27ea870d2f200c45639b7e9e13a14161a105976eb5b5fdbf5e74c49e8a"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 1,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 1,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2584,
+   "cumulative_hours": 4.3946,
+   "embedding_sha256": "427ad8b7d5b1d5d5f05f82fd37342252edbe357e4e2302db037638ed34c5045a"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 2,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 2,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 4.6531,
+   "embedding_sha256": "c67ad2a8b9fd26905490ee4fb68145a3276b32933b7ece37e30001216b603874"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 3,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 3,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2586,
+   "cumulative_hours": 4.9117,
+   "embedding_sha256": "ab5a3ca26a425a746c9520a843a7b6ef20eb0a89c28a8cfa82940064499e15b9"
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 4,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PP_clique",
+   "seed": 4,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2585,
+   "cumulative_hours": 5.1702,
+   "embedding_sha256": "459c54aa828fda66084c83f7074a3c15efabdc4b6e38e0f3d8b3036d596268ed"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 0,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 0,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2583,
+   "cumulative_hours": 5.4285,
+   "embedding_sha256": "7309ebaba9b664fa4ee9e7cf7fb1450f17e41e3d8174ca9bff7dffe999be843d"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 1,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 1,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2586,
+   "cumulative_hours": 5.6871,
+   "embedding_sha256": "b16e965dad8565a0122d0bdc247020a61c0f4d4e0c189a6c88bb65118d56526a"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 2,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 2,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2587,
+   "cumulative_hours": 5.9459,
+   "embedding_sha256": "6de7397681de7944aadcc3e3fedfcc6dc2deb0f830f0e3dc3317d52853887372"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 3,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 3,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2584,
+   "cumulative_hours": 6.2043,
+   "embedding_sha256": "3e9377f97a53297787422e50331dcde9f3a3817baaa348d9179bfb2c1db67ae1"
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 4,
+   "status": "running",
+   "returncode": null,
+   "hours": null,
+   "cumulative_hours": null,
+   "embedding_sha256": null
+  },
+  {
+   "arm": "PR_clique",
+   "seed": 4,
+   "status": "finished",
+   "returncode": 0,
+   "hours": 0.2582,
+   "cumulative_hours": 6.4625,
+   "embedding_sha256": "40cb6dbe5f155b387ff542becf70c14861eec48703c8dbddfe7df64218f6bb0c"
+  }
+ ],
+ "stopped": null
+}

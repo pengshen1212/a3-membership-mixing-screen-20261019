@@ -1,0 +1,39 @@
+2026-10-20 04:12:18,007 - INFO - dataset: het_g8p0_perm3, seed: 4, device: cuda, measure: jsd, ver: stage_a_PR_clique_s4, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 04:12:18,011 - INFO - ==Road_features is ready
+2026-10-20 04:12:18,091 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 68474.29it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 13004.04it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2410/26161 [00:00<00:00, 24032.58it/s] 18%|█▊        | 4814/26161 [00:00<00:00, 22086.71it/s] 27%|██▋       | 7033/26161 [00:00<00:00, 21468.83it/s] 35%|███▌      | 9185/26161 [00:00<00:00, 19321.22it/s] 43%|████▎     | 11142/26161 [00:00<00:00, 17892.97it/s] 50%|████▉     | 12954/26161 [00:00<00:00, 17037.42it/s] 56%|█████▌    | 14672/26161 [00:00<00:00, 15470.53it/s] 62%|██████▏   | 16242/26161 [00:00<00:00, 13915.61it/s] 68%|██████▊   | 17663/26161 [00:01<00:00, 13249.63it/s] 73%|███████▎  | 19005/26161 [00:01<00:00, 12621.39it/s] 78%|███████▊  | 20276/26161 [00:01<00:00, 11596.79it/s] 82%|████████▏ | 21447/26161 [00:01<00:00, 10850.12it/s] 86%|████████▌ | 22540/26161 [00:01<00:00, 10618.18it/s] 90%|█████████ | 23605/26161 [00:01<00:00, 10347.15it/s] 94%|█████████▍| 24640/26161 [00:01<00:00, 10237.50it/s] 98%|█████████▊| 25663/26161 [00:01<00:00, 9664.27it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13245.48it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 04:12:20,127 - INFO - ==hg_structure is ready==
+2026-10-20 04:12:23,086 - INFO - ==variant=induced_coeff_override: pairwise adj nnz=40567211 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 04:12:23,191 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 04:12:23,262 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 04:12:23,262 - INFO - ==hop weight is ready==
+2026-10-20 04:12:23,483 - INFO - A3 verified dispatch: variant=induced_coeff_override, hgnn=PairHGNN
+2026-10-20 04:13:09,326 - INFO - Episode 249/5000, Loss: -0.5568
+2026-10-20 04:13:55,697 - INFO - Episode 499/5000, Loss: -0.5929
+2026-10-20 04:14:42,154 - INFO - Episode 749/5000, Loss: -0.6236
+2026-10-20 04:15:27,309 - INFO - Episode 999/5000, Loss: -0.6403
+2026-10-20 04:16:13,271 - INFO - Episode 1249/5000, Loss: -0.6514
+2026-10-20 04:16:59,419 - INFO - Episode 1499/5000, Loss: -0.6447
+2026-10-20 04:17:45,448 - INFO - Episode 1749/5000, Loss: -0.6817
+2026-10-20 04:18:31,454 - INFO - Episode 1999/5000, Loss: -0.6732
+2026-10-20 04:19:16,709 - INFO - Episode 2249/5000, Loss: -0.7025
+2026-10-20 04:20:03,081 - INFO - Episode 2499/5000, Loss: -0.7048
+2026-10-20 04:20:49,543 - INFO - Episode 2749/5000, Loss: -0.7201
+2026-10-20 04:21:35,112 - INFO - Episode 2999/5000, Loss: -0.7226
+2026-10-20 04:22:20,992 - INFO - Episode 3249/5000, Loss: -0.7424
+2026-10-20 04:23:06,666 - INFO - Episode 3499/5000, Loss: -0.7278
+2026-10-20 04:23:52,927 - INFO - Episode 3749/5000, Loss: -0.7244
+2026-10-20 04:24:39,326 - INFO - Episode 3999/5000, Loss: -0.7557
+2026-10-20 04:25:24,648 - INFO - Episode 4249/5000, Loss: -0.7380
+2026-10-20 04:26:10,538 - INFO - Episode 4499/5000, Loss: -0.7327
+2026-10-20 04:26:56,733 - INFO - Episode 4749/5000, Loss: -0.7269
+2026-10-20 04:27:42,649 - INFO - Episode 4999/5000, Loss: -0.7827
+2026-10-20 04:27:42,649 - INFO - !!!Training graph end!!!
+2026-10-20 04:27:42,720 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PR_clique\seed4\graph_model.pt
+2026-10-20 04:27:42,763 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PR_clique\seed4\emb_induced_coeff_override_s4.pt

@@ -1,0 +1,27 @@
+{
+ "status": "evaluated",
+ "revision": "user-approved option 2 (2026-10-20 '\u90092\u5427'): bitwise -> numerical equivalence",
+ "gate": {
+  "criterion": "|MAE_rerun - MAE_orig| <= 0.005 m/s (25% of the +0.02 threshold)",
+  "delta_mae": 0.0008733154939410959,
+  "threshold": 0.005,
+  "passed": true
+ },
+ "mae_original": 3.5907688050146347,
+ "mae_rerun": 3.5898954895206936,
+ "embedding_stats_reported_not_gated": {
+  "max_abs_diff": 19.3610897064209,
+  "rms_diff": 0.6862004995346069,
+  "relative_frobenius_error": 0.33430272340774536,
+  "mean_row_cosine": 0.9589574337005615,
+  "min_row_cosine": 0.8328827023506165
+ },
+ "context": {
+  "seed_std_delta_content": 0.016053614241446953,
+  "seed_range_delta_content": 0.04498595876833811,
+  "delta_over_seed_std": 0.05439993018434344,
+  "bitwise_identical": false,
+  "interpretation_note": "estimand-level stability under run-level re-initialization/atomic-order chaos is the scientifically relevant reproducibility property"
+ },
+ "verdict": "benign_nondeterminism"
+}

@@ -1,0 +1,29 @@
+{
+ "status": "evaluated",
+ "device": "cuda",
+ "torch": "2.4.1+cu121",
+ "note": "one reference per seed covers all arms: construction sequence consumed by the RNG stream is identical across arms (same config dims from hash-identical road_feature.csv, same hop prior, same PairHGNN swap); end-to-end bitwise reproduction check in the runner validates this against a real training run",
+ "seeds": {
+  "0": {
+   "state_dict_sha256": "3a9f108f69b42b21d1b90cbd68ffabfc6ef1b257471db40cb483c5580a30fbea",
+   "deterministic": true
+  },
+  "1": {
+   "state_dict_sha256": "7bf29e520323ba4caaef939eeabf373c658402f4316ccbd5ef79d5c9367c4e3f",
+   "deterministic": true
+  },
+  "2": {
+   "state_dict_sha256": "a98cfe30c2d668e26f10f5a2c8940239252d08ef538a2a4cd47190891aaf70ed",
+   "deterministic": true
+  },
+  "3": {
+   "state_dict_sha256": "c01c026d2aab9785ec4edb1b9cf3292c2047de535e05628707d1dc155ddc9e7d",
+   "deterministic": true
+  },
+  "4": {
+   "state_dict_sha256": "a61ab31a19935a42bf84d15b845316536df82e9206fed72aa0b2ec4835ac6461",
+   "deterministic": true
+  }
+ },
+ "all_deterministic": true
+}

@@ -1,0 +1,271 @@
+{
+ "status": "evaluated",
+ "design": "independent_membership_instance_perm3_content_x_real_vs_perm_coefficients",
+ "instance": {
+  "name": "perm3",
+  "data_dir": "data/het_g8p0_perm3",
+  "generation_seed": 20261019,
+  "algorithm": "single uniform node permutation consuming the real region-size histogram in ascending region-id order (same family as archived perm0/1/2)",
+  "seg2region_sha256": "1b08c41d20354f4334e92872e8f7d35933105d01ddb6659b011dd519ecf3b3f5",
+  "validation": "outputs/perm3_generation.json + outputs/operator_validation_stage_a.json"
+ },
+ "reuse_level": "none_all_arms_retrained",
+ "certified": true,
+ "thresholds": {
+  "meaningful_positive_m_s": 0.02,
+  "meaningful_negative_m_s": -0.02,
+  "negligible_band_m_s": [
+   -0.01,
+   0.01
+  ],
+  "alpha": 0.05,
+  "interval": "two-sided 95% t interval with 4 df over 5 paired seeds"
+ },
+ "subsets": {
+  "all_roads": {
+   "n_labeled": 9384,
+   "mae_per_arm_seed": {
+    "RR_exact": {
+     "exact": [
+      3.5885841591771976,
+      3.58927552715651,
+      3.5844280280210588,
+      3.5923281917024754,
+      3.599344239073563
+     ]
+    },
+    "RR_clique": {
+     "clique": [
+      3.5907688050146347,
+      3.587956386036272,
+      3.58861862353192,
+      3.5906502781126206,
+      3.586440639661885
+     ]
+    },
+    "PP_exact": {
+     "exact": [
+      3.691448307232134,
+      3.6943767284827027,
+      3.707042281001694,
+      3.6931994226334024,
+      3.6957636316696747
+     ]
+    },
+    "PP_clique": {
+     "clique": [
+      3.630186445913898,
+      3.625572145658889,
+      3.629609040791671,
+      3.628924523902367,
+      3.6299486911679115
+     ]
+    },
+    "PR_clique": {
+     "clique": [
+      3.640151420995982,
+      3.635759897803808,
+      3.6323684844718476,
+      3.631973502612234,
+      3.648981598985627
+     ]
+    }
+   },
+   "contrast_E_per_arm_seed": {
+    "RR": [
+     0.002184645837437049,
+     -0.001319141120238232,
+     0.004190595510861428,
+     -0.001677913589854807,
+     -0.01290359941167818
+    ],
+    "PP": [
+     -0.061261861318235855,
+     -0.06880458282381374,
+     -0.07743324021002307,
+     -0.06427489873103553,
+     -0.06581494050176318
+    ],
+    "PR": [
+     -0.051296886236151806,
+     -0.05861683067889478,
+     -0.07467379652984629,
+     -0.061225920021168445,
+     -0.04678203268404779
+    ]
+   },
+   "delta_content": {
+    "per_seed": [
+     0.053481532073588856,
+     0.05729768955865655,
+     0.07886439204070772,
+     0.05954800643131364,
+     0.03387843327236961
+    ],
+    "mean": 0.05661401067532727,
+    "ci95": [
+     0.03668081583067132,
+     0.07654720551998323
+    ]
+   },
+   "delta_coefficient": {
+    "per_seed": [
+     0.009964975082084049,
+     0.01018775214491896,
+     0.0027594436801767763,
+     0.0030489787098670895,
+     0.019032907817715383
+    ],
+    "mean": 0.008998811486952451,
+    "ci95": [
+     0.0007307751534487584,
+     0.017266847820456142
+    ]
+   },
+   "delta_total": {
+    "per_seed": [
+     0.0634465071556729,
+     0.06748544170357551,
+     0.0816238357208845,
+     0.06259698514118073,
+     0.052911341090084996
+    ],
+    "mean": 0.06561282216227973,
+    "ci95": [
+     0.052664715187916405,
+     0.07856092913664306
+    ]
+   },
+   "additivity_max_abs_error": 0.0
+  },
+  "perm3_movable": {
+   "n_labeled": 3075,
+   "mae_per_arm_seed": {
+    "RR_exact": {
+     "exact": [
+      3.575755465943489,
+      3.567732955081724,
+      3.5653088453527277,
+      3.5640999686513917,
+      3.5816067346246574
+     ]
+    },
+    "RR_clique": {
+     "clique": [
+      3.5778899635369132,
+      3.574808990823153,
+      3.5759580702752922,
+      3.578711388460396,
+      3.573195527139819
+     ]
+    },
+    "PP_exact": {
+     "exact": [
+      3.6691237213087438,
+      3.6660444155383827,
+      3.6613090127674326,
+      3.667192422293203,
+      3.6607963966974206
+     ]
+    },
+    "PP_clique": {
+     "clique": [
+      3.592968992381969,
+      3.590788199354358,
+      3.591314539051266,
+      3.5907699496963437,
+      3.589002375664104
+     ]
+    },
+    "PR_clique": {
+     "clique": [
+      3.611476632256756,
+      3.613972140948322,
+      3.5942832798638036,
+      3.60424567755133,
+      3.621123552827548
+     ]
+    }
+   },
+   "contrast_E_per_arm_seed": {
+    "RR": [
+     0.0021344975934241006,
+     0.00707603574142901,
+     0.010649224922564482,
+     0.014611419809004378,
+     -0.008411207484838368
+    ],
+    "PP": [
+     -0.07615472892677477,
+     -0.0752562161840249,
+     -0.06999447371616663,
+     -0.07642247259685941,
+     -0.07179402103331656
+    ],
+    "PR": [
+     -0.05764708905198779,
+     -0.05207227459006081,
+     -0.06702573290362901,
+     -0.06294674474187323,
+     -0.039672843869872576
+    ]
+   },
+   "delta_content": {
+    "per_seed": [
+     0.05978158664541189,
+     0.05914831033148982,
+     0.07767495782619349,
+     0.0775581645508776,
+     0.03126163638503421
+    ],
+    "mean": 0.061084931147801405,
+    "ci95": [
+     0.03751395444497639,
+     0.08465590785062642
+    ]
+   },
+   "delta_coefficient": {
+    "per_seed": [
+     0.018507639874786985,
+     0.023183941593964086,
+     0.002968740812537618,
+     0.013475727854986186,
+     0.03212117716344398
+    ],
+    "mean": 0.01805144545994377,
+    "ci95": [
+     0.004550195671764179,
+     0.03155269524812336
+    ]
+   },
+   "delta_total": {
+    "per_seed": [
+     0.07828922652019887,
+     0.0823322519254539,
+     0.08064369863873111,
+     0.09103389240586379,
+     0.06338281354847819
+    ],
+    "mean": 0.07913637660774517,
+    "ci95": [
+     0.0666743601524797,
+     0.09159839306301064
+    ]
+   },
+   "additivity_max_abs_error": 0.0
+  }
+ },
+ "verdict": "meaningful_positive",
+ "stop_rule": "content effect confirmed on an independent instance; proceed to Stage B (second instance or new city) only",
+ "reproducibility_check": {
+  "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0 --ver stage_a_RR_clique_s0 --variant induced_clique_self --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-a\\outputs\\stage_a\\repro_check_RR_clique_s0",
+  "returncode": 0,
+  "hours": 0.2634,
+  "cumulative_hours": 6.7259,
+  "original_sha256": "acee795ebd5aa0b349c4f643f731e09053a36558c3fb66c77cb3b057d548c87c",
+  "repro_sha256": "60698bd4253c1197946da597a9d49f1647727e0ae54559e2f4984c9f318ac383",
+  "bitwise_identical": false,
+  "note": "embedding must match bitwise; mismatch flags all Stage A results determinism_suspect"
+ },
+ "determinism_flag": "determinism_suspect"
+}

@@ -1,0 +1,359 @@
+{
+ "status": "evaluated",
+ "design": "second_independent_membership_instance_perm4_with_certified_RR_reuse",
+ "instance": {
+  "name": "perm4",
+  "data_dir": "data/het_g8p0_perm4",
+  "generation_seed": 20261020,
+  "algorithm": "identical family/algorithm as perm3 (global node permutation consuming the real region-size histogram in ascending region-id order)",
+  "seg2region_sha256": "BOUND_AT_GENERATION (outputs/perm4_generation.json)",
+  "validation": "outputs/perm4_generation.json checks all true (incl. differs from real/perm0/perm3)"
+ },
+ "reuse": {
+  "RR": "certified reuse of Stage A retrained embeddings (hash-bound to stage_a_manifest.json, re-verified at preflight and at evaluation)",
+  "level": "RR_certified_reuse_PP_PR_retrained"
+ },
+ "certified": true,
+ "rr_reuse_hash_verified": true,
+ "thresholds": {
+  "meaningful_positive_m_s": 0.02,
+  "meaningful_negative_m_s": -0.02,
+  "negligible_band_m_s": [
+   -0.01,
+   0.01
+  ],
+  "alpha": 0.05,
+  "interval": "two-sided 95% t interval with 4 df over 5 paired seeds"
+ },
+ "subsets": {
+  "all_roads": {
+   "n_labeled": 9384,
+   "mae_per_arm_seed": {
+    "RR_exact": [
+     3.5885841591771976,
+     3.58927552715651,
+     3.5844280280210588,
+     3.5923281917024754,
+     3.599344239073563
+    ],
+    "RR_clique": [
+     3.5907688050146347,
+     3.587956386036272,
+     3.58861862353192,
+     3.5906502781126206,
+     3.586440639661885
+    ],
+    "PP_exact": [
+     3.7087971128911374,
+     3.6819935504993033,
+     3.68800138640435,
+     3.673146951575751,
+     3.6903093475665862
+    ],
+    "PP_clique": [
+     3.6313552319470888,
+     3.6265942813820873,
+     3.6258094141397597,
+     3.6267429932637585,
+     3.6284042124683245
+    ],
+    "PR_clique": [
+     3.6529556306584374,
+     3.634904378743681,
+     3.6484829383572617,
+     3.6281781833749402,
+     3.647881945364402
+    ]
+   },
+   "contrast_E_per_arm_seed": {
+    "RR": [
+     0.002184645837437049,
+     -0.001319141120238232,
+     0.004190595510861428,
+     -0.001677913589854807,
+     -0.01290359941167818
+    ],
+    "PP": [
+     -0.07744188094404869,
+     -0.05539926911721604,
+     -0.0621919722645905,
+     -0.04640395831199262,
+     -0.06190513509826179
+    ],
+    "PR": [
+     -0.055841482232700024,
+     -0.04708917175562233,
+     -0.039518448047088484,
+     -0.04496876820081086,
+     -0.04242740220218444
+    ]
+   },
+   "delta_content": {
+    "per_seed": [
+     0.05802612807013707,
+     0.045770030635384096,
+     0.04370904355794991,
+     0.04329085461095605,
+     0.02952380279050626
+    ],
+    "mean": 0.04406397193298668,
+    "ci95": [
+     0.031493194839529115,
+     0.05663474902644425
+    ]
+   },
+   "delta_coefficient": {
+    "per_seed": [
+     0.021600398711348667,
+     0.008310097361593716,
+     0.022673524217502017,
+     0.001435190111181761,
+     0.01947773289607735
+    ],
+    "mean": 0.014699388659540702,
+    "ci95": [
+     0.0030713303171480306,
+     0.026327447001933374
+    ]
+   },
+   "delta_total": {
+    "per_seed": [
+     0.07962652678148574,
+     0.05408012799697781,
+     0.06638256777545193,
+     0.044726044722137814,
+     0.04900153568658361
+    ],
+    "mean": 0.05876336059252738,
+    "ci95": [
+     0.04112041017216126,
+     0.0764063110128935
+    ]
+   },
+   "additivity_max_abs_error": 0.0
+  },
+  "perm4_movable": {
+   "n_labeled": 3094,
+   "mae_per_arm_seed": {
+    "RR_exact": [
+     3.5847658980077313,
+     3.5878422600255835,
+     3.611090629053465,
+     3.599324571384882,
+     3.6074183609484165
+    ],
+    "RR_clique": [
+     3.6062101270665563,
+     3.600381703747068,
+     3.603053958112715,
+     3.609257513910441,
+     3.6035537447651427
+    ],
+    "PP_exact": [
+     3.7094311357610614,
+     3.70328590086195,
+     3.6897800048052476,
+     3.671875571579654,
+     3.673661052591779
+    ],
+    "PP_clique": [
+     3.6221373495371507,
+     3.6161251690323692,
+     3.6168799439628545,
+     3.618080365274282,
+     3.6188399467045533
+    ],
+    "PR_clique": [
+     3.6337750355946605,
+     3.636025455072071,
+     3.6344282494284412,
+     3.6429841162313945,
+     3.6417364031549493
+    ]
+   },
+   "contrast_E_per_arm_seed": {
+    "RR": [
+     0.021444229058825037,
+     0.0125394437214843,
+     -0.00803667094074978,
+     0.009932942525558985,
+     -0.003864616183273828
+    ],
+    "PP": [
+     -0.08729378622391071,
+     -0.08716073182958084,
+     -0.07290006084239309,
+     -0.053795206305371934,
+     -0.05482110588722566
+    ],
+    "PR": [
+     -0.0756561001664009,
+     -0.06726044578987889,
+     -0.055351755376806366,
+     -0.02889145534825932,
+     -0.03192464943682971
+    ]
+   },
+   "delta_content": {
+    "per_seed": [
+     0.09710032922522593,
+     0.07979988951136319,
+     0.04731508443605659,
+     0.038824397873818306,
+     0.028060033253555883
+    ],
+    "mean": 0.05821994686000398,
+    "ci95": [
+     0.022114940104776937,
+     0.09432495361523102
+    ]
+   },
+   "delta_coefficient": {
+    "per_seed": [
+     0.01163768605750981,
+     0.019900286039701953,
+     0.017548305465586722,
+     0.024903750957112614,
+     0.022896456450395952
+    ],
+    "mean": 0.019377296994061412,
+    "ci95": [
+     0.01297199295499673,
+     0.025782601033126094
+    ]
+   },
+   "delta_total": {
+    "per_seed": [
+     0.10873801528273574,
+     0.09970017555106514,
+     0.06486338990164331,
+     0.06372814883093092,
+     0.050956489703951835
+    ],
+    "mean": 0.07759724385406538,
+    "ci95": [
+     0.046416146906707104,
+     0.10877834080142366
+    ]
+   },
+   "additivity_max_abs_error": 0.0
+  }
+ },
+ "verdict": "meaningful_positive",
+ "stop_rule": "replication on a second independent instance; combined with Stage A supports the A3 mechanism claim; B2 (new city) remains the external-validity step and requires data",
+ "reproducibility_check": {
+  "cmd": "C:/Users/SHEN.PENG23/venvs/a3screen/Scripts/python.exe train_graph.py --dataset het_g8p0_perm4 --ver stage_b1_PP_clique_s0 --variant induced_clique_self --seed 0 --device cuda --output-dir C:\\Users\\SHEN.PENG23\\.zcode\\workspace\\default\\a3-membership-mixing-screen\\hypergraph\\experiments\\a3-membership-mixing-stage-b1\\outputs\\stage_b1\\repro_check_PP_clique_s0",
+  "returncode": 0,
+  "hours": 0.265,
+  "cumulative_hours": 4.1432,
+  "original_sha256": "ab9d6b1bf41552fb3123a941b40be211f24f712a563bb33a2c77483a5b669d18",
+  "repro_sha256": "bec29de2e9539392b5826bda79db3f4fa1f60983cf570770d94d03ce669e1572",
+  "bitwise_identical": false,
+  "embedding_stats": {
+   "max_abs_diff": 83.42675018310547,
+   "rms_diff": 0.7845797538757324,
+   "relative_frobenius_error": 0.4814290404319763
+  },
+  "criterion": "numerical equivalence: MAE drift <= 0.005 m/s, evaluated by eval_stage_b1.py (revision 2026-10-20, user-approved option 2); bitwise is reported only, not gating"
+ },
+ "repro_numerical_equivalence": {
+  "mae_original": 3.6313552319470888,
+  "mae_rerun": 3.6311330576738805,
+  "abs_drift": 0.00022217427320825323,
+  "threshold": 0.005,
+  "benign": true
+ },
+ "cross_instance": {
+  "perm3_stage_a": {
+   "verdict": "meaningful_positive",
+   "delta_content": {
+    "per_seed": [
+     0.053481532073588856,
+     0.05729768955865655,
+     0.07886439204070772,
+     0.05954800643131364,
+     0.03387843327236961
+    ],
+    "mean": 0.05661401067532727,
+    "ci95": [
+     0.03668081583067132,
+     0.07654720551998323
+    ]
+   },
+   "delta_coefficient": {
+    "per_seed": [
+     0.009964975082084049,
+     0.01018775214491896,
+     0.0027594436801767763,
+     0.0030489787098670895,
+     0.019032907817715383
+    ],
+    "mean": 0.008998811486952451,
+    "ci95": [
+     0.0007307751534487584,
+     0.017266847820456142
+    ]
+   },
+   "delta_total": {
+    "per_seed": [
+     0.0634465071556729,
+     0.06748544170357551,
+     0.0816238357208845,
+     0.06259698514118073,
+     0.052911341090084996
+    ],
+    "mean": 0.06561282216227973,
+    "ci95": [
+     0.052664715187916405,
+     0.07856092913664306
+    ]
+   }
+  },
+  "perm4_stage_b1": {
+   "verdict": "meaningful_positive",
+   "delta_content": {
+    "per_seed": [
+     0.05802612807013707,
+     0.045770030635384096,
+     0.04370904355794991,
+     0.04329085461095605,
+     0.02952380279050626
+    ],
+    "mean": 0.04406397193298668,
+    "ci95": [
+     0.031493194839529115,
+     0.05663474902644425
+    ]
+   },
+   "delta_coefficient": {
+    "per_seed": [
+     0.021600398711348667,
+     0.008310097361593716,
+     0.022673524217502017,
+     0.001435190111181761,
+     0.01947773289607735
+    ],
+    "mean": 0.014699388659540702,
+    "ci95": [
+     0.0030713303171480306,
+     0.026327447001933374
+    ]
+   },
+   "delta_total": {
+    "per_seed": [
+     0.07962652678148574,
+     0.05408012799697781,
+     0.06638256777545193,
+     0.044726044722137814,
+     0.04900153568658361
+    ],
+    "mean": 0.05876336059252738,
+    "ci95": [
+     0.04112041017216126,
+     0.0764063110128935
+    ]
+   }
+  },
+  "note": "same-city second instance; city-level external validity requires B2 (new city data)"
+ }
+}

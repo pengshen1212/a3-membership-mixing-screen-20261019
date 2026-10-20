@@ -1,0 +1,39 @@
+2026-10-20 03:25:45,159 - INFO - dataset: het_g8p0_perm3, seed: 1, device: cuda, measure: jsd, ver: stage_a_PR_clique_s1, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 03:25:45,164 - INFO - ==Road_features is ready
+2026-10-20 03:25:45,244 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 70795.47it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<?, ?it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2436/26161 [00:00<00:00, 24358.16it/s] 19%|█▊        | 4872/26161 [00:00<00:00, 22260.33it/s] 27%|██▋       | 7110/26161 [00:00<00:00, 21744.32it/s] 36%|███▌      | 9291/26161 [00:00<00:00, 19478.84it/s] 43%|████▎     | 11267/26161 [00:00<00:00, 17802.35it/s] 50%|████▉     | 13077/26161 [00:00<00:00, 16793.10it/s] 56%|█████▋    | 14776/26161 [00:00<00:00, 15487.38it/s] 62%|██████▏   | 16344/26161 [00:00<00:00, 14025.34it/s] 68%|██████▊   | 17770/26161 [00:01<00:00, 13393.71it/s] 73%|███████▎  | 19122/26161 [00:01<00:00, 12573.57it/s] 78%|███████▊  | 20388/26161 [00:01<00:00, 11591.63it/s] 82%|████████▏ | 21557/26161 [00:01<00:00, 10944.19it/s] 87%|████████▋ | 22657/26161 [00:01<00:00, 10709.31it/s] 91%|█████████ | 23729/26161 [00:01<00:00, 10426.52it/s] 95%|█████████▍| 24771/26161 [00:01<00:00, 10283.12it/s] 99%|█████████▊| 25798/26161 [00:01<00:00, 9872.55it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13386.40it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 03:25:47,248 - INFO - ==hg_structure is ready==
+2026-10-20 03:25:50,183 - INFO - ==variant=induced_coeff_override: pairwise adj nnz=40567211 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 03:25:50,289 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 03:25:50,360 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 03:25:50,360 - INFO - ==hop weight is ready==
+2026-10-20 03:25:50,581 - INFO - A3 verified dispatch: variant=induced_coeff_override, hgnn=PairHGNN
+2026-10-20 03:26:37,590 - INFO - Episode 249/5000, Loss: -0.5547
+2026-10-20 03:27:22,819 - INFO - Episode 499/5000, Loss: -0.5920
+2026-10-20 03:28:09,004 - INFO - Episode 749/5000, Loss: -0.6240
+2026-10-20 03:28:55,325 - INFO - Episode 999/5000, Loss: -0.6363
+2026-10-20 03:29:41,541 - INFO - Episode 1249/5000, Loss: -0.6435
+2026-10-20 03:30:27,596 - INFO - Episode 1499/5000, Loss: -0.6473
+2026-10-20 03:31:12,973 - INFO - Episode 1749/5000, Loss: -0.6529
+2026-10-20 03:31:59,321 - INFO - Episode 1999/5000, Loss: -0.6425
+2026-10-20 03:32:46,180 - INFO - Episode 2249/5000, Loss: -0.6811
+2026-10-20 03:33:31,570 - INFO - Episode 2499/5000, Loss: -0.6975
+2026-10-20 03:34:17,390 - INFO - Episode 2749/5000, Loss: -0.6904
+2026-10-20 03:35:03,339 - INFO - Episode 2999/5000, Loss: -0.7137
+2026-10-20 03:35:49,642 - INFO - Episode 3249/5000, Loss: -0.7122
+2026-10-20 03:36:35,869 - INFO - Episode 3499/5000, Loss: -0.7214
+2026-10-20 03:37:21,253 - INFO - Episode 3749/5000, Loss: -0.7308
+2026-10-20 03:38:07,365 - INFO - Episode 3999/5000, Loss: -0.7466
+2026-10-20 03:38:53,772 - INFO - Episode 4249/5000, Loss: -0.6808
+2026-10-20 03:39:39,617 - INFO - Episode 4499/5000, Loss: -0.7392
+2026-10-20 03:40:25,567 - INFO - Episode 4749/5000, Loss: -0.7584
+2026-10-20 03:41:11,054 - INFO - Episode 4999/5000, Loss: -0.7524
+2026-10-20 03:41:11,054 - INFO - !!!Training graph end!!!
+2026-10-20 03:41:11,126 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PR_clique\seed1\graph_model.pt
+2026-10-20 03:41:11,166 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PR_clique\seed1\emb_induced_coeff_override_s1.pt

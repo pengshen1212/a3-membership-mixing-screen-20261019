@@ -1,0 +1,39 @@
+2026-10-19 23:33:05,982 - INFO - dataset: het_g8p0, seed: 1, device: cuda, measure: jsd, ver: stage_a_RR_clique_s1, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-19 23:33:05,987 - INFO - ==Road_features is ready
+2026-10-19 23:33:06,063 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 67898.50it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 12945.38it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2386/26161 [00:00<00:00, 23857.86it/s] 18%|█▊        | 4772/26161 [00:00<00:00, 21576.75it/s] 27%|██▋       | 6944/26161 [00:00<00:00, 20840.31it/s] 35%|███▍      | 9036/26161 [00:00<00:00, 19144.45it/s] 42%|████▏     | 10967/26161 [00:00<00:00, 17647.72it/s] 49%|████▊     | 12751/26161 [00:00<00:00, 16986.62it/s] 55%|█████▌    | 14461/26161 [00:00<00:00, 15585.57it/s] 61%|██████▏   | 16037/26161 [00:00<00:00, 13803.44it/s] 67%|██████▋   | 17450/26161 [00:01<00:00, 13137.80it/s] 72%|███████▏  | 18784/26161 [00:01<00:00, 12608.91it/s] 77%|███████▋  | 20056/26161 [00:01<00:00, 11587.44it/s] 81%|████████  | 21228/26161 [00:01<00:00, 10932.73it/s] 85%|████████▌ | 22329/26161 [00:01<00:00, 10672.45it/s] 89%|████████▉ | 23399/26161 [00:01<00:00, 10288.71it/s] 93%|█████████▎| 24428/26161 [00:01<00:00, 10288.12it/s] 97%|█████████▋| 25457/26161 [00:01<00:00, 9909.76it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13167.60it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-19 23:33:08,110 - INFO - ==hg_structure is ready==
+2026-10-19 23:33:11,036 - INFO - ==variant=induced_clique_self: pairwise adj nnz=40534925 from 2199 hyperedges (single tensor, int32)==
+2026-10-19 23:33:11,147 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-19 23:33:11,217 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-19 23:33:11,217 - INFO - ==hop weight is ready==
+2026-10-19 23:33:11,430 - INFO - A3 verified dispatch: variant=induced_clique_self, hgnn=PairHGNN
+2026-10-19 23:33:58,320 - INFO - Episode 249/5000, Loss: -0.5789
+2026-10-19 23:34:44,635 - INFO - Episode 499/5000, Loss: -0.6432
+2026-10-19 23:35:29,871 - INFO - Episode 749/5000, Loss: -0.6538
+2026-10-19 23:36:15,996 - INFO - Episode 999/5000, Loss: -0.7156
+2026-10-19 23:37:01,930 - INFO - Episode 1249/5000, Loss: -0.7296
+2026-10-19 23:37:48,246 - INFO - Episode 1499/5000, Loss: -0.7672
+2026-10-19 23:38:34,320 - INFO - Episode 1749/5000, Loss: -0.7890
+2026-10-19 23:39:19,523 - INFO - Episode 1999/5000, Loss: -0.8101
+2026-10-19 23:40:05,909 - INFO - Episode 2249/5000, Loss: -0.8112
+2026-10-19 23:40:52,217 - INFO - Episode 2499/5000, Loss: -0.8421
+2026-10-19 23:41:37,819 - INFO - Episode 2749/5000, Loss: -0.8571
+2026-10-19 23:42:23,724 - INFO - Episode 2999/5000, Loss: -0.8557
+2026-10-19 23:43:09,330 - INFO - Episode 3249/5000, Loss: -0.8549
+2026-10-19 23:43:55,653 - INFO - Episode 3499/5000, Loss: -0.8754
+2026-10-19 23:44:42,030 - INFO - Episode 3749/5000, Loss: -0.8797
+2026-10-19 23:45:27,326 - INFO - Episode 3999/5000, Loss: -0.8747
+2026-10-19 23:46:13,162 - INFO - Episode 4249/5000, Loss: -0.9066
+2026-10-19 23:46:59,242 - INFO - Episode 4499/5000, Loss: -0.9016
+2026-10-19 23:47:45,332 - INFO - Episode 4749/5000, Loss: -0.8763
+2026-10-19 23:48:31,381 - INFO - Episode 4999/5000, Loss: -0.8878
+2026-10-19 23:48:31,381 - INFO - !!!Training graph end!!!
+2026-10-19 23:48:31,450 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\RR_clique\seed1\graph_model.pt
+2026-10-19 23:48:31,492 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\RR_clique\seed1\emb_induced_clique_self_s1.pt

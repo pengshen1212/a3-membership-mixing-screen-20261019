@@ -1,0 +1,106 @@
+{
+ "status": "evaluated",
+ "paths": {
+  "RR_exact": {
+   "nnz": 40534925,
+   "row_sum_err": 5.960464477539062e-07,
+   "min": 4.356159479357302e-05,
+   "max": 0.5454545617103577,
+   "sha256": "8e6c796e39246cbbdadec02828a9c1bc1595ac239dfc1c5a5af1d1596e2543a6"
+  },
+  "RR_clique": {
+   "nnz": 40534925,
+   "row_sum_err": 2.384185791015625e-07,
+   "min": 0.0001634521031519398,
+   "max": 0.2142857313156128,
+   "sha256": "cae2cec95680eb7647cb817f41e1a8e753a89778e42daa76ed4e45fdc39c196d"
+  },
+  "PP_exact": {
+   "nnz": 40567211,
+   "row_sum_err": 5.960464477539062e-07,
+   "min": 4.356159479357302e-05,
+   "max": 0.5625,
+   "sha256": "7140f04a0185783b71444455f333d5dc3e72115b1c12d484346806b5a712b116"
+  },
+  "PP_clique": {
+   "nnz": 40567211,
+   "row_sum_err": 2.384185791015625e-07,
+   "min": 0.0001634521031519398,
+   "max": 0.2222222238779068,
+   "sha256": "2b94ccc6b46afbf27785ec804edc7b989a1faf87c886ed72be6da5cd252ce83a"
+  },
+  "PR_clique": {
+   "nnz": 40567211,
+   "row_sum_err": 9.992007221626409e-16,
+   "min": 4.596728967666608e-07,
+   "max": 0.9722222222222222,
+   "sha256": "6d3ee57982ec242c7ee1c6bd1f86f422c70955631e584dde89941de24469eca5"
+  }
+ },
+ "identities": {
+  "PR_exact_vs_PP_exact": 0.0,
+  "RP_exact_vs_RR_exact": 0.0,
+  "PR_clique_vs_PP_clique_nonzero": 0.8571428571428571,
+  "PP_exact_dhg_vs_independent_ref": 3.2400526817077946e-08,
+  "PP_clique_vs_independent_ref": 4.967053740534411e-09,
+  "RR_exact_dhg_vs_independent_ref": 3.2400526817077946e-08
+ },
+ "cross_check": {
+  "RR_exact": {
+   "nnz_match": true,
+   "row_sum_err_match": true,
+   "build_only_nnz": 40534925,
+   "probe_nnz": 40534925
+  },
+  "RR_clique": {
+   "nnz_match": true,
+   "row_sum_err_match": true,
+   "build_only_nnz": 40534925,
+   "probe_nnz": 40534925
+  },
+  "PP_exact": {
+   "nnz_match": true,
+   "row_sum_err_match": true,
+   "build_only_nnz": 40567211,
+   "probe_nnz": 40567211
+  },
+  "PP_clique": {
+   "nnz_match": true,
+   "row_sum_err_match": true,
+   "build_only_nnz": 40567211,
+   "probe_nnz": 40567211
+  },
+  "PR_clique": {
+   "nnz_match": true,
+   "row_sum_err_match": true,
+   "build_only_nnz": 40567211,
+   "probe_nnz": 40567211
+  }
+ },
+ "data_pins": {
+  "data/het_g8p0/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+  "data/het_g8p0/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+  "data/het_g8p0/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+  "data/het_g8p0/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+  "data/het_g8p0/win_speed.csv": "23077a9072d31d08deca1944725cab1a04d40484b1e21c9f65dabb712c39c413",
+  "data/het_g8p0/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+  "data/het_g8p0_perm3/road_feature.csv": "567a9de25cb710a04766d4c7bd8a1d373701fb7a3e650b1572d2bf18b9274df6",
+  "data/het_g8p0_perm3/roadmap.rel": "3d914f4e881d1648ef2f870e211b0455d5525e75f1299d9016be188e8dcca483",
+  "data/het_g8p0_perm3/edge_attr.csv": "cd97ccb5b124cfde812e96a77136088bfe5bf3cdc1bcdd6b04a5164de036fb3b",
+  "data/het_g8p0_perm3/w_by_hop_sparse.npz": "bf676529d83b2dc622fd611af9b1607d08dc875a096d35fab36b1e7ebe696945",
+  "data/het_g8p0_perm3/win_speed.csv": "23077a9072d31d08deca1944725cab1a04d40484b1e21c9f65dabb712c39c413",
+  "data/het_g8p0_perm3/roadmap.geo": "817c28f36ae50b466be649478a53326186197405c431ec597642e60d4c50c6d3",
+  "data/het_g8p0/seg2region.csv": "009afff57c8115be49a5197f9814f6b481ab96650e53829dd1f802fe3f7cd7a0",
+  "data/het_g8p0_perm3/seg2region.csv": "1b08c41d20354f4334e92872e8f7d35933105d01ddb6659b011dd519ecf3b3f5"
+ },
+ "gate": {
+  "exact_identity_PR_PP_zero": true,
+  "exact_identity_RP_RR_zero": true,
+  "clique_content_diff_nonzero": true,
+  "refs_match": true,
+  "row_sums": true,
+  "cross_check_all_match": true
+ },
+ "gate_passed": true,
+ "note": "op_hash is computed on sorted-canonical CSR; a one-time instrumented run of a diagnostic COPY of the pinned entry (pinned file untouched, copy deleted after) verified the probe's RR_clique operator is BYTE-IDENTICAL to the entry's in-process operator (sha256 cae2cec95680eb7647cb817f41e1a8e753a89778e42daa76ed4e45fdc39c196d). Row-sum errors are computed on sorted storage because float32 accumulation is storage-order dependent; the unsorted reconstruction differed by last-ULP only."
+}

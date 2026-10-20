@@ -1,0 +1,39 @@
+2026-10-20 02:23:42,578 - INFO - dataset: het_g8p0_perm3, seed: 2, device: cuda, measure: jsd, ver: stage_a_PP_clique_s2, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 02:23:42,583 - INFO - ==Road_features is ready
+2026-10-20 02:23:42,656 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 70808.20it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 12970.02it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2368/26161 [00:00<00:01, 23537.32it/s] 18%|█▊        | 4722/26161 [00:00<00:01, 21171.35it/s] 26%|██▌       | 6855/26161 [00:00<00:00, 21203.68it/s] 34%|███▍      | 8984/26161 [00:00<00:00, 19367.42it/s] 42%|████▏     | 10943/26161 [00:00<00:00, 17832.37it/s] 49%|████▊     | 12751/26161 [00:00<00:00, 17121.48it/s] 55%|█████▌    | 14478/26161 [00:00<00:00, 15639.35it/s] 61%|██████▏   | 16064/26161 [00:00<00:00, 14086.50it/s] 67%|██████▋   | 17502/26161 [00:01<00:00, 13386.53it/s] 72%|███████▏  | 18858/26161 [00:01<00:00, 12816.41it/s] 77%|███████▋  | 20149/26161 [00:01<00:00, 11812.57it/s] 82%|████████▏ | 21342/26161 [00:01<00:00, 10727.75it/s] 86%|████████▌ | 22430/26161 [00:01<00:00, 10463.12it/s] 90%|████████▉ | 23484/26161 [00:01<00:00, 10156.47it/s] 94%|█████████▎| 24503/26161 [00:01<00:00, 10038.78it/s] 98%|█████████▊| 25508/26161 [00:01<00:00, 9594.58it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13134.05it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 02:23:44,708 - INFO - ==hg_structure is ready==
+2026-10-20 02:23:47,603 - INFO - ==variant=induced_clique_self: pairwise adj nnz=40567211 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 02:23:47,708 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 02:23:47,782 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 02:23:47,782 - INFO - ==hop weight is ready==
+2026-10-20 02:23:47,988 - INFO - A3 verified dispatch: variant=induced_clique_self, hgnn=PairHGNN
+2026-10-20 02:24:34,311 - INFO - Episode 249/5000, Loss: -0.5364
+2026-10-20 02:25:19,573 - INFO - Episode 499/5000, Loss: -0.5729
+2026-10-20 02:26:05,747 - INFO - Episode 749/5000, Loss: -0.5916
+2026-10-20 02:26:52,169 - INFO - Episode 999/5000, Loss: -0.6070
+2026-10-20 02:27:37,847 - INFO - Episode 1249/5000, Loss: -0.6249
+2026-10-20 02:28:23,723 - INFO - Episode 1499/5000, Loss: -0.6519
+2026-10-20 02:29:09,300 - INFO - Episode 1749/5000, Loss: -0.6650
+2026-10-20 02:29:55,741 - INFO - Episode 1999/5000, Loss: -0.6748
+2026-10-20 02:30:42,217 - INFO - Episode 2249/5000, Loss: -0.6932
+2026-10-20 02:31:27,512 - INFO - Episode 2499/5000, Loss: -0.7152
+2026-10-20 02:32:13,462 - INFO - Episode 2749/5000, Loss: -0.4712
+2026-10-20 02:33:00,117 - INFO - Episode 2999/5000, Loss: -0.6001
+2026-10-20 02:33:46,394 - INFO - Episode 3249/5000, Loss: -0.6577
+2026-10-20 02:34:32,470 - INFO - Episode 3499/5000, Loss: -0.6926
+2026-10-20 02:35:18,121 - INFO - Episode 3749/5000, Loss: -0.7078
+2026-10-20 02:36:04,458 - INFO - Episode 3999/5000, Loss: -0.6643
+2026-10-20 02:36:50,967 - INFO - Episode 4249/5000, Loss: -0.7337
+2026-10-20 02:37:36,677 - INFO - Episode 4499/5000, Loss: -0.7361
+2026-10-20 02:38:22,514 - INFO - Episode 4749/5000, Loss: -0.7570
+2026-10-20 02:39:08,081 - INFO - Episode 4999/5000, Loss: -0.7593
+2026-10-20 02:39:08,081 - INFO - !!!Training graph end!!!
+2026-10-20 02:39:08,157 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PP_clique\seed2\graph_model.pt
+2026-10-20 02:39:08,198 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-a\outputs\stage_a\PP_clique\seed2\emb_induced_clique_self_s2.pt

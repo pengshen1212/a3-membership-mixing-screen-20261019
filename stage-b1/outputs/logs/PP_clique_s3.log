@@ -1,0 +1,39 @@
+2026-10-20 12:43:44,242 - INFO - dataset: het_g8p0_perm4, seed: 3, device: cuda, measure: jsd, ver: stage_b1_PP_clique_s3, train: 0, hg_type: 4, normalize: False, test: False, magicP: 512
+2026-10-20 12:43:44,247 - INFO - ==Road_features is ready
+2026-10-20 12:43:44,328 - INFO - ==edge_ettr is ready==
+  0%|          | 0/2160 [00:00<?, ?it/s]100%|██████████| 2160/2160 [00:00<00:00, 68503.29it/s]
+1-num_hyperedge: 2160; total-num_hyperedge: 2160
+  0%|          | 0/13 [00:00<?, ?it/s]100%|██████████| 13/13 [00:00<00:00, 13094.61it/s]
+2-num_hyperedge: 13; total-num_hyperedge: 2173
+  0%|          | 0/26161 [00:00<?, ?it/s]  9%|▉         | 2374/26161 [00:00<00:01, 23691.16it/s] 18%|█▊        | 4744/26161 [00:00<00:01, 21307.30it/s] 26%|██▋       | 6903/26161 [00:00<00:00, 21344.64it/s] 35%|███▍      | 9047/26161 [00:00<00:00, 19470.02it/s] 42%|████▏     | 11017/26161 [00:00<00:00, 17985.36it/s] 49%|████▉     | 12840/26161 [00:00<00:00, 16820.45it/s] 56%|█████▌    | 14542/26161 [00:00<00:00, 15439.23it/s] 62%|██████▏   | 16108/26161 [00:00<00:00, 13962.46it/s] 67%|██████▋   | 17531/26161 [00:01<00:00, 13282.94it/s] 72%|███████▏  | 18875/26161 [00:01<00:00, 12685.94it/s] 77%|███████▋  | 20152/26161 [00:01<00:00, 11752.34it/s] 82%|████████▏ | 21336/26161 [00:01<00:00, 11009.96it/s] 86%|████████▌ | 22444/26161 [00:01<00:00, 10760.12it/s] 90%|████████▉ | 23522/26161 [00:01<00:00, 10409.79it/s] 94%|█████████▍| 24563/26161 [00:01<00:00, 10353.36it/s] 98%|█████████▊| 25598/26161 [00:01<00:00, 9785.84it/s] 100%|██████████| 26161/26161 [00:01<00:00, 13266.33it/s]
+3-num_hyperedge: 26; total-num_hyperedge: 2199
+4-num_hyperedge: 0; total-num_hyperedge: 2199
+2026-10-20 12:43:46,359 - INFO - ==hg_structure is ready==
+2026-10-20 12:43:49,380 - INFO - ==variant=induced_clique_self: pairwise adj nnz=40572597 from 2199 hyperedges (single tensor, int32)==
+2026-10-20 12:43:49,483 - INFO - ==loaded sparse hop weight: shape=(11095, 11095), nnz=5742706==
+2026-10-20 12:43:49,554 - INFO - ==hop weight (sparse) is ready: nnz=5744311==
+2026-10-20 12:43:49,554 - INFO - ==hop weight is ready==
+2026-10-20 12:43:49,770 - INFO - A3 verified dispatch: variant=induced_clique_self, hgnn=PairHGNN
+2026-10-20 12:44:36,303 - INFO - Episode 249/5000, Loss: -0.5190
+2026-10-20 12:45:21,541 - INFO - Episode 499/5000, Loss: -0.5623
+2026-10-20 12:46:07,870 - INFO - Episode 749/5000, Loss: -0.5779
+2026-10-20 12:46:54,239 - INFO - Episode 999/5000, Loss: -0.5941
+2026-10-20 12:47:40,043 - INFO - Episode 1249/5000, Loss: -0.6122
+2026-10-20 12:48:26,042 - INFO - Episode 1499/5000, Loss: -0.6285
+2026-10-20 12:49:11,567 - INFO - Episode 1749/5000, Loss: -0.6313
+2026-10-20 12:49:57,992 - INFO - Episode 1999/5000, Loss: -0.6566
+2026-10-20 12:50:44,518 - INFO - Episode 2249/5000, Loss: -0.6655
+2026-10-20 12:51:29,796 - INFO - Episode 2499/5000, Loss: -0.6837
+2026-10-20 12:52:15,732 - INFO - Episode 2749/5000, Loss: -0.6993
+2026-10-20 12:53:01,744 - INFO - Episode 2999/5000, Loss: -0.7096
+2026-10-20 12:53:47,905 - INFO - Episode 3249/5000, Loss: -0.7024
+2026-10-20 12:54:34,184 - INFO - Episode 3499/5000, Loss: -0.7179
+2026-10-20 12:55:19,427 - INFO - Episode 3749/5000, Loss: -0.7364
+2026-10-20 12:56:05,596 - INFO - Episode 3999/5000, Loss: -0.7319
+2026-10-20 12:56:52,054 - INFO - Episode 4249/5000, Loss: -0.7509
+2026-10-20 12:57:37,739 - INFO - Episode 4499/5000, Loss: -0.7390
+2026-10-20 12:58:23,588 - INFO - Episode 4749/5000, Loss: -0.7686
+2026-10-20 12:59:09,122 - INFO - Episode 4999/5000, Loss: -0.7591
+2026-10-20 12:59:09,123 - INFO - !!!Training graph end!!!
+2026-10-20 12:59:09,184 - INFO - graph model saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-b1\outputs\stage_b1\PP_clique\seed3\graph_model.pt
+2026-10-20 12:59:09,224 - INFO - embeddings saved -> C:\Users\SHEN.PENG23\.zcode\workspace\default\a3-membership-mixing-screen\hypergraph\experiments\a3-membership-mixing-stage-b1\outputs\stage_b1\PP_clique\seed3\emb_induced_clique_self_s3.pt

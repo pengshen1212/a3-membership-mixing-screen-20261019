@@ -1,0 +1,59 @@
+{
+ "gates": {
+  "stage_a_meaningful_positive": true,
+  "stage_a_determinism_benign": true,
+  "rr_certified_reuse_bound": true,
+  "perm4_instance_valid": true,
+  "perm4_operator_identity": true,
+  "perm4_shared_inputs_identical": true,
+  "init_reference_available": true
+ },
+ "rr_binding": {
+  "RR_exact_s0": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s1": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s2": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s3": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_exact_s4": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s0": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s1": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s2": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s3": {
+   "exists": true,
+   "hash_matches_manifest": true
+  },
+  "RR_clique_s4": {
+   "exists": true,
+   "hash_matches_manifest": true
+  }
+ },
+ "operator_identity": {
+  "PR_exact_vs_PP_exact": 0.0,
+  "PR_clique_vs_PP_clique": 0.8245931283905967,
+  "row_sum_err_PR_clique": 6.661338147750939e-16
+ },
+ "status": "pass"
+}
