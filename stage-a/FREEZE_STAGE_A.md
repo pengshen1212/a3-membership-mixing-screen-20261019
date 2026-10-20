@@ -53,3 +53,9 @@
 - Stage A 通过≠独立确认完成:单城市单实例,Stage B 才是第二个实例;本实验相对 perm0 筛选是独立的(新实例 + 零复用),但对"城市级外推"仍非独立样本。
 - 认证级 manifest 覆盖本机运行;不追溯认证 perm0 存档(其 exploratory_only 状态不变,仅用于历史对比)。
 - 路径分解路径依赖;RP 不训练,不宣称唯一因果占比。
+
+## 7. 勘误(Erratum,2026-10-20,学校端核验发现)
+
+- §1 中"11,090/11,095 节点换区"是 **perm0** 的实测数(引用存档行为),非 perm3 的。**perm3 实际换区 10,973/11,095**(见 outputs/perm3_generation.json 的 changed_vs_real)。族定义与全部约束不受影响。
+- 账本 stage_a_runs.json 因运行器 pre-fix 的 save_all append 缺陷,每 run 有 2 条最终值相同的记录(50 条,非 26)。权威 per-run 记录是 stage_a_manifest.json;去重视图见 outputs/stage_a_runs_unique.json(unique_runs=25)。原始账本未改动,留作证据。
+- 复现判据按用户批准的选项 2(2026-10-20)修订为数值等价(MAE 漂移 ≤ 0.005 m/s,实测 0.00087,benign_nondeterminism);bitwise 结果保留记录但不作判据。评估器已同步:stage_a_result.json 为 v2 口径(含 determinism 块与 certified_definition),v1(bitwise flag 口径)存档为 stage_a_result_v1_bitwise_flag.json。认证定义见仓库根 CERTIFICATION.md。

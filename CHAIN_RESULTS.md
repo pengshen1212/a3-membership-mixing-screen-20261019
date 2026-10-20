@@ -31,7 +31,8 @@
 
 - 三个实例均在 Porto 同一路网:这是**同城实例级复现**,不构成城市级外推(B2 待数据)。
 - 路径分解依赖指定路径(RP 未训练),不宣称唯一因果占比;Δ_coeff 在实例间有波动(0.0075–0.0147)。
-- Stage A 账本(stage_a_runs.json)因运行器已知的 upsert 前缺陷,每 run 有两条最终值相同的记录(读侧去重即可;权威 per-run 记录以 stage_a_manifest.json 为准);B1 账本为修复后版本,无此问题。
+- **认证口径(2026-10-20 勘误后,见根目录 CERTIFICATION.md)**:certified = manifest 完备 + 数值等价复现(Stage A 漂移 0.00087、B1 0.00022,均 ≤ 0.005 判 benign),不是 bitwise 可复现。stage_a_result.json 为 v2 口径(含 determinism 块与 certified_definition,无 suspect 标志;v1 存档为 stage_a_result_v1_bitwise_flag.json)。
+- Stage A 原始账本(stage_a_runs.json)有已知重复(pre-fix 缺陷,50 条);**权威 per-run 记录 = stage_a_manifest.json**,去重视图 stage_a_runs_unique.json(unique_runs=25);B1 账本无此问题。FREEZE_STAGE_A.md §7 勘误:11,090 为 perm0 换区数,perm3 实际 10,973。
 - ridge 探针存在 ill-conditioning 警告(rcond≈5e-8),跨臂、跨实验一致存在,不影响对比有效性;结果均值距阈值均有裕量(非边缘判定)。
 - graph_model.pt(40 × 75.2MB)按"可选、较大"保留运行机,未上传;嵌入足以独立复核全部 MAE 与判定。
 - 各目录 MANIFEST.sha256 为该目录全量校验清单(根目录原 MANIFEST 只覆盖 perm0 筛选部分,未改动);`.gitattributes(* -text)` 保证任意平台检出字节一致。

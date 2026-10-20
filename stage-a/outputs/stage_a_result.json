@@ -267,5 +267,12 @@
   "bitwise_identical": false,
   "note": "embedding must match bitwise; mismatch flags all Stage A results determinism_suspect"
  },
- "determinism_flag": "determinism_suspect"
+ "determinism": {
+  "bitwise_identical": false,
+  "assessment_verdict": "benign_nondeterminism",
+  "mae_drift": 0.0008733154939410959,
+  "criterion": "numerical equivalence: |MAE_rerun - MAE_orig| <= 0.005 m/s (revision 2026-10-20, user-approved option 2); bitwise identity recorded but not the criterion",
+  "assessment_file": "outputs/stage_a_determinism_assessment.json"
+ },
+ "certified_definition": "certified here means manifest-complete + numerical-equivalence reproducibility: per-run code/data/environment/operator/init/output hashes are recorded in stage_a_manifest.json, and the rerun check satisfies the pre-registered numerical-equivalence gate; bitwise identity is NOT claimed (run-level GPU atomic-order chaos); see CERTIFICATION.md at the repository root"
 }

@@ -132,8 +132,28 @@ def main() -> None:
     out["stop_rule"] = CFG["stop_rules"].get(verdict, "stop")
     repro = json.loads((ROOT / "outputs" / "stage_a_manifest.json").read_text(encoding="utf-8"))
     out["reproducibility_check"] = repro.get("reproducibility_check")
-    if not (out["reproducibility_check"] or {}).get("bitwise_identical", False):
+    # determinism handling per the user-approved option-2 revision (2026-10-20):
+    # bitwise identity is RECORDED but the criterion is numerical equivalence
+    # (stage_a_determinism_assessment.json); no determinism_suspect flag when benign
+    det_path = ROOT / "outputs" / "stage_a_determinism_assessment.json"
+    det = json.loads(det_path.read_text(encoding="utf-8")) if det_path.exists() else None
+    out["determinism"] = {
+        "bitwise_identical": (out["reproducibility_check"] or {}).get("bitwise_identical"),
+        "assessment_verdict": det.get("verdict") if det else None,
+        "mae_drift": (det or {}).get("gate", {}).get("delta_mae"),
+        "criterion": "numerical equivalence: |MAE_rerun - MAE_orig| <= 0.005 m/s "
+                     "(revision 2026-10-20, user-approved option 2); bitwise identity "
+                     "recorded but not the criterion",
+        "assessment_file": "outputs/stage_a_determinism_assessment.json",
+    }
+    if not (det and det.get("verdict") == "benign_nondeterminism"):
         out["determinism_flag"] = "determinism_suspect"
+    out["certified_definition"] = (
+        "certified here means manifest-complete + numerical-equivalence reproducibility: "
+        "per-run code/data/environment/operator/init/output hashes are recorded in "
+        "stage_a_manifest.json, and the rerun check satisfies the pre-registered "
+        "numerical-equivalence gate; bitwise identity is NOT claimed (run-level GPU "
+        "atomic-order chaos); see CERTIFICATION.md at the repository root")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(json.dumps({
