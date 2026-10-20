@@ -1,0 +1,82 @@
+{
+ "dataset": "bj_b2",
+ "source": "Beijing real road network (bj_win_early + beijing_tst)",
+ "nodes": 40306,
+ "regions": 8656,
+ "region_size_min": 1,
+ "region_size_max": 5386,
+ "region_size_mean": 4.656423290203327,
+ "region_size_median": 1.0,
+ "road_types": 14,
+ "rel_edges": 101024,
+ "boundary_pairs": 88,
+ "total_hyperedges": 8758,
+ "labeled_roads": 32261,
+ "speed_min": 0.0854555555555555,
+ "speed_mean": 8.188519127369402,
+ "speed_max": 34.99484,
+ "speed_std": 4.185697205442057,
+ "hop_shape": [
+  40306,
+  40306
+ ],
+ "hop_nnz": 12100907,
+ "hop_dtype": "float32",
+ "hop_min": 1.0,
+ "hop_max": 32180.0,
+ "hop_finite": true,
+ "geo_rows": 40306,
+ "edge_attr_rows": 101024,
+ "rel_rows": 101024,
+ "checks": {
+  "geo_id_contiguous": true,
+  "road_id_contiguous": true,
+  "region_ids_contiguous": true,
+  "rel_geo_aligned": true,
+  "hop_rows_match": true
+ },
+ "hashes": {
+  "roadmap.geo": "ee6222637d919917c7bac4d893ab692759373aab4d76ddfebf5537bb2ce0c4e8",
+  "roadmap.rel": "9f5c21a970915a712a8a791898e50425e2ac8765de976ecf6048975e849b6ff0",
+  "road_feature.csv": "69d58e2df4e2d570cc75f8d2f3edd4c211286ccb27ad907d90c1ef1d87582831",
+  "seg2region.csv": "8f45a26f32cb785645d42803dfcb865b89cae47753b186b44929324c07c9d4f2",
+  "win_speed.csv": "7d0fceb1ff36574f53f6ef1e7a9d53e49e198a0fa4e998598be87acab2d11c75",
+  "w_by_hop_sparse.npz": "a51645acde4655c3c510d660fe4ccd741c1b79cfc7c67583a31da4330acbc57e",
+  "edge_attr.csv": "5af364e2928efbcd3b867553d61b459dc6e44da27c9464d26f51413ac7aeccc0"
+ },
+ "provenance": {
+  "roadmap.geo": "beijing_tst/roadmap.geo (true OSM coordinates)",
+  "roadmap.rel": "bj_win_early/roadmap.rel; byte-identical to beijing_tst/roadmap.rel",
+  "edge_attr.csv": "beijing_tst/edge_attr.csv; same 101,024 rel order",
+  "seg2region.csv": "bj_win_early/seg2region.csv (8,656 regions; matches a3_bjext 1-num_hyperedge=8656)",
+  "w_by_hop_sparse.npz": "bj_win_early/w_by_hop_sparse.npz; precomputed hop prior; raw 711MB trajectory not shipped"
+ },
+ "cost_warning": {
+  "archived_beijing_hours_per_run": 2.85,
+  "b2_runs_25_plus_1": 26,
+  "estimated_hours_total": 74.1,
+  "b2_doc_cap_hours": 10,
+  "status": "cap_infeasible_for_full_beijing",
+  "note": "25 formal + 1 repro at Beijing scale is ~74h; the B2 10h cap was Porto-scale. Revise budget/pre-registration before running. Reduced-seed designs are possible but weaken the paired CI."
+ },
+ "threshold_warning": "Beijing labels 32,261 and speed scale 0.085-34.99; the Porto +/-0.02/0.01 m/s thresholds must be re-reviewed and pre-registered for this city.",
+ "dataset_py_note": "Remote B2 code must use its true dataset.py or confirm the stub is never executed; all training inputs (features/edge_attr/hop/labels) are present.",
+ "operator_probe": {
+  "weighting": "clique",
+  "nnz": 480176828,
+  "shape": [
+   40306,
+   40306
+  ],
+  "row_sum_max_abs_error_to_1": 4.440892098500626e-16,
+  "min_entry": 4.5777065690089265e-05,
+  "max_entry": 0.09523809523809523,
+  "build_seconds": 105.4,
+  "note": "built with explicit n_expected=40306; local default 11095 would reject this dataset"
+ },
+ "code_precondition": {
+  "issue": "a3_coeff_override.load_partition currently defaults n_expected=11095 (Porto)",
+  "fix": "pass n_expected=40306 in train_graph override branch, or generalize the default to infer len(seg2region)",
+  "otherwise": "train_graph.py --variant induced_coeff_override stops at load_partition before building the operator"
+ }
+}
